@@ -1,0 +1,77 @@
+---
+title: "Discussion of Matching Mechanisms and Justified Envy: Stability on the Intensive Margin"
+subtitle: "Le Kang, Wei Ha, Yang Song, Sen Zhou"
+author: "Discussant: Eren Bilen, Assistant Professor of <br> Data Analytics"
+institute: "Dickinson College"
+date: "The Chinese Economists Society North America Conference, Lewisburg, PA"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      after_body: insert-logo.html
+editor_options: 
+  chunk_output_type: console
+---
+
+<style>
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+
+<!--
+.caption:before {
+  content:"Figure: ";
+  font-weight: bold;
+} -->
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(base_color = "#23395b")
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r,echo=F}
+#library(countdown)
+#countdown(minutes = 0, seconds = 10, top = 2,left = 5, right = 5)
+```
+
+**Research question:**
+- Did the switch from Immediate Acceptance matching to Parallel <br> mechanism (a version of Deferred Acceptance algo.) improve "justified <br> envy" in CEE in China over 2005-2011?
+
+**Highlights:**
+- High impact and high stakes: university and career path.
+- 80% of students had justified envy prior to policy reform.
+  - On average, a student justifiably envies 357 students.
+- Policy showed improvement (~60%), especially with lower socioeconomic background students.
+  
+**Comments:**
+- The impact on average (or minimum) CEE scores at university level.
+- Retention, stability.
+  - Retaking: due to desire to improve their placement towards a higher ranked university, or are there other dimensions? E.g., location, major.. Evidence from survey data?
+- College graduation rates, GPA? High school test taking skills vs. college performance.
+
+---
+**Comments (cont.):**
+- STEM, non-STEM heterogeneity results? Are the effects STEM driven?
+- Figure 5, 2005-2011: Does the hump shape remain if observations are <br> broken down by each year?
+- More background info on university rankings: E.g., are rankings determined by the minimum cutoff?
+- Are there schools that moved up (or down) the rankings over the sample period? Do students respond to a ranking change in the way your simulation predicts?
+- A brief few sentences on why Immediate Acceptance was the main algorithm?
+- Big picture: better school matches --> better labor market outcomes?
+
+Survey ideas:
+- Student preferences data from the Ministry of Education? Possibility of surveying students for their preferences?
+  - Even through an anecdotal sample, showing correlation with actual university rankings at the province level.
+- "Are you satisfied with your placement?"
+- "Were you overly cautious in your selections?" 
+- Typo: Page 27, line 3. Equation number: "??".
