@@ -3,7 +3,8 @@
   <head>
     <title>Nationalism in Online Games: Impacts of International Conflicts on Chess Player Behavior</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Eren Bilen, Assistant Professor of Data Analytics" />
+    <meta name="author" content="Robizon Khubulashvili, Assistant Professor of Economics" />
+    <meta name="date" content="2024-04-26" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
@@ -25,16 +26,16 @@ class: center, middle, inverse, title-slide
 # Nationalism in Online Games: Impacts of International Conflicts on Chess Player Behavior
 ]
 .subtitle[
-## ⚔<br/>with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)
+## ⚔<br/>with Eren Bilen (Dickinson College), Nino Doghonadze (Uber), David Smerdon (U of Queensland)
 ]
 .author[
-### Eren Bilen, Assistant Professor of Data Analytics
+### Robizon Khubulashvili, Assistant Professor of Economics
 ]
 .institute[
-### Dickinson College
+### University of San Francisco
 ]
 .date[
-### SEA 2023 [3.B.05] Economics of Conflict, Nov 20, 2023
+### April 26, 2024
 ]
 
 ---
@@ -130,8 +131,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(43.1, 41.5, zoom = 5)
 ```
 
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5be6ce4f8a343866c2d1" style="width:100%;height:288px;"></div>
-<script type="application/json" data-for="htmlwidget-5be6ce4f8a343866c2d1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[41.5,43.1],5,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-944be367062459848337" style="width:100%;height:288px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-944be367062459848337">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[41.5,43.1],5,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -147,8 +148,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(33.1, 51.5, zoom = 4)
 ```
 
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-713c3132192d2d6d1752" style="width:100%;height:288px;"></div>
-<script type="application/json" data-for="htmlwidget-713c3132192d2d6d1752">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.5,33.1],4,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cb8e175f99d25a4b769f" style="width:100%;height:288px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cb8e175f99d25a4b769f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.5,33.1],4,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 # How to proceed?
@@ -290,6 +291,19 @@ where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player
   - Secondary outcomes: "How the game ended": e.g., "agree" to a draw, "stalling" a game; game length (measured by total number of moves).
   
 ---
+  
+# Results
+
+`\(\\[-.1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="summary.png" alt="Summary statistics" width="85%" /&gt;
+&lt;p class="caption"&gt;Summary statistics&lt;/p&gt;
+&lt;/div&gt;
+
+
+---
+  
+
 
 # Results
 
@@ -312,20 +326,12 @@ where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player
 
 # Results
 
-`\(\\[1cm]\)`
+`\(\\[-.5cm]\)`
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="table1_azarm.png" alt="Differences in Differences regression results, AZ-ARM conflict (all sample)" width="60%" /&gt;
-&lt;p class="caption"&gt;Differences in Differences regression results, AZ-ARM conflict (all sample)&lt;/p&gt;
+&lt;img src="table2.png" alt="Differences in Differences regression results" width="70%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results&lt;/p&gt;
 &lt;/div&gt;
----
 
-# Results
-
-`\(\\[1cm]\)`
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="table2_azarm.png" alt="Differences in Differences regression results (Azeri players)" width="60%" /&gt;
-&lt;p class="caption"&gt;Differences in Differences regression results (Azeri players)&lt;/p&gt;
-&lt;/div&gt;
 ---
 
 # Results
@@ -695,7 +701,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 })(document);</script>
 <style>
 .logo {
-  background-image: url(https://pbs.twimg.com/profile_images/1121082444596350976/IH7Sq90N_400x400.png);
+  background-image: url(https://fundit.fr/sites/default/files/styles/max_650x650/public/actors/2704-universite-san-francisco-usf.png?itok=F8rXEMmE);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

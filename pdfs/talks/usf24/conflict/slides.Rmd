@@ -1,9 +1,9 @@
 ---
 title: "Nationalism in Online Games: Impacts of International Conflicts on Chess Player Behavior"
-subtitle: "⚔<br/>with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)"
-author: "Eren Bilen, Assistant Professor of Data Analytics"
-institute: "Dickinson College"
-date: "SEA 2023 [3.B.05] Economics of Conflict, Nov 20, 2023"
+subtitle: "⚔<br/>with Eren Bilen (Dickinson College), Nino Doghonadze (Uber), David Smerdon (U of Queensland)"
+author: "Robizon Khubulashvili, Assistant Professor of Economics"
+institute: "University of San Francisco"
+date: "April 26, 2024"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -274,6 +274,18 @@ $Y_{ijg}$ includes performance e.g., mistakes, blunders; game outcomes e.g., win
   - Secondary outcomes: "How the game ended": e.g., "agree" to a draw, "stalling" a game; game length (measured by total number of moves).
   
 ---
+  
+# Results
+
+$\\[-.1cm]$
+```{r,echo=F, out.width="85%",fig.align="center",fig.cap="Summary statistics"}
+knitr::include_graphics("summary.png")
+```
+
+
+---
+  
+
 
 # Results
 
@@ -294,18 +306,11 @@ knitr::include_graphics("acceptance-uaru.png")
 
 # Results
 
-$\\[1cm]$
-```{r,echo=F, out.width="60%",fig.align="center",fig.cap="Differences in Differences regression results, AZ-ARM conflict (all sample)"}
-knitr::include_graphics("table1_azarm.png")
+$\\[-.5cm]$
+```{r,echo=F, out.width="70%",fig.align="center",fig.cap="Differences in Differences regression results"}
+knitr::include_graphics("table2.png")
 ```
----
 
-# Results
-
-$\\[1cm]$
-```{r,echo=F, out.width="60%",fig.align="center",fig.cap="Differences in Differences regression results (Azeri players)"}
-knitr::include_graphics("table2_azarm.png")
-```
 ---
 
 # Results
