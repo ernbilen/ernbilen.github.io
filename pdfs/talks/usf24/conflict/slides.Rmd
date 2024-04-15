@@ -263,12 +263,12 @@ knitr::include_graphics("image6.png")
   - E.g., Ukrainian vs. Russian players before and after the conflict.
   - Their games against other non-conflict countries before and after the conflict
 - No variation in treatment timing: post same for everyone.
-- How do users get matched? Random. BUT, can someone "refuse" to play? Yes. (estimate the probability of "friendliness" through friend lists.)
+- How do users get matched? Random. BUT, can someone "refuse" to play? Yes. Sample is biased towards zero.
 
 
 $Y_{ijg}=\gamma H_{ijg}+\pmb{X_{ijg}}'\pmb{\beta}+T_g+\alpha_i+u_{ijg}$
 
-where $H_{ijg}$ equals 1 if a game $g$ between player $i$ and player $j$ happened between players of "treated" countries post the conflict starting date.
+where $H_{ijg}$ equals 1 if a game $g$ between player $i$ and player $j$ happened between players of "treated" countries post the conflict starting date. $T_g$ is yearmonth FEs; $\alpha_i$ is player FEs. $u_{ijg}$ is the idiosyncratic shock.
 
 $Y_{ijg}$ includes performance e.g., mistakes, blunders; game outcomes e.g., win, loss; and the choice of game complexity.
   - Secondary outcomes: "How the game ended": e.g., "agree" to a draw, "stalling" a game; game length (measured by total number of moves).
@@ -362,11 +362,16 @@ knitr::include_graphics("table7.png")
 # Takeaways
 
 - Conflicts impact the quality of moves made by chess players, but no evidence for "aggressive" games played.
-  - Low effort and/or high emotional response to conflict.
-- Impact is not uniform: Armenian-Azerbaijani conflict showed larger coefficients.
-  - Public support for the conflict? Russia consistently shows weak support.
-- Players were more resilient, played longer games and resigned less often post conflict.
-- (not presented) No clear heterogeneity by player strength and time-control.
+- Average quality is better, frequency of mistakes are higher.
+  - Potential channels: Higher effort and/or high emotional response to conflict.
+- Games end up more as draws.
+- More resiliency: longer games with less resigning and more mates.
+- Impact is not uniform:
+  - Lowest rated players show more aggression. Quality improvements come from the highest rating quartile.
+  - More aggression in longer time control: rapid.
+  - About uniform response from both sides.
+- Tie with nationwide public support on the conflict.
+
 ---
 
 class: center, middle
@@ -406,71 +411,5 @@ knitr::include_graphics("shannon.png")
 count: false
 <iframe src="https://lichess.org/analysis/8/6k1/3p1n1p/2pP1B1P/2P1pP1B/K1n5/8/8_w_-_-_0_1?color=white" style="width: 400px; height: 644px;" allowtransparency="true" frameborder="0"></iframe>
 
----
-count: false
-# Appendix
-
-$\\[.2cm]$
-```{r,echo=F, out.width="70%",fig.align="center",fig.cap="Time-control, AZ-ARM sample"}
-knitr::include_graphics("table6_azarm.png")
-```
-
----
-count: false
-# Appendix
-
-$\\[.2cm]$
-```{r,echo=F, out.width="70%",fig.align="center",fig.cap="Time-control, UA-RU sample"}
-knitr::include_graphics("table6_uaru.png")
-```
-
----
-count: false
-# Appendix
-
-$\\[1cm]$
-```{r,echo=F, out.width="80%",fig.align="center",fig.cap="Pre-trend check, AZ-ARM sample"}
-knitr::include_graphics("pretrend_azarm.png")
-```
-
----
-count: false
-# Appendix
-
-$\\[1cm]$
-```{r,echo=F, out.width="80%",fig.align="center",fig.cap="Pre-trend check, UA-RU sample"}
-knitr::include_graphics("pretrend_uaru.png")
-```
-
----
-count: false
-# Appendix
-
-```{r,echo=F, out.width="99%",fig.align="center",fig.cap="Monthly averages, ACPL, AZ-ARM conflict"}
-knitr::include_graphics("acpl-matchvsnon-new.png")
-```
----
-count: false
-# Appendix
-
-```{r,echo=F, out.width="99%",fig.align="center",fig.cap="Monthly averages, Complexity, AZ-ARM conflict"}
-knitr::include_graphics("diff-matchvsnon-new.png")
-```
----
-count: false
-# Appendix
-
-
-```{r,echo=F, out.width="99%",fig.align="center",fig.cap="Monthly averages, ACPL, UA-RU conflict"}
-knitr::include_graphics("acpl-uaru-matchvsnon.png")
-```
-
----
-count: false
-# Appendix
-
-```{r,echo=F, out.width="99%",fig.align="center",fig.cap="Monthly averages, Complexity, UA-RU conflict"}
-knitr::include_graphics("diff-uaru-matchvsnon.png")
-```
 
 

@@ -131,8 +131,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(43.1, 41.5, zoom = 5)
 ```
 
-<div id="htmlwidget-bf90160ab3e5d1258d49" style="width:100%;height:288px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bf90160ab3e5d1258d49">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[41.5,43.1],5,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a956ea0e7bc563485de3" style="width:100%;height:288px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a956ea0e7bc563485de3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[41.5,43.1],5,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -148,8 +148,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(33.1, 51.5, zoom = 4)
 ```
 
-<div id="htmlwidget-0d8a62ef67948ee3bd6a" style="width:100%;height:288px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0d8a62ef67948ee3bd6a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.5,33.1],4,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8e5d394cfce5a6890d5d" style="width:100%;height:288px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8e5d394cfce5a6890d5d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.5,33.1],4,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 # How to proceed?
@@ -280,12 +280,12 @@ where `\(U_{y, i, j}\)` is the utility player `\(i\)` obtains from an outcome `\
   - E.g., Ukrainian vs. Russian players before and after the conflict.
   - Their games against other non-conflict countries before and after the conflict
 - No variation in treatment timing: post same for everyone.
-- How do users get matched? Random. BUT, can someone "refuse" to play? Yes. (estimate the probability of "friendliness" through friend lists.)
+- How do users get matched? Random. BUT, can someone "refuse" to play? Yes. Sample is biased towards zero.
 
 
 `\(Y_{ijg}=\gamma H_{ijg}+\pmb{X_{ijg}}'\pmb{\beta}+T_g+\alpha_i+u_{ijg}\)`
 
-where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player `\(j\)` happened between players of "treated" countries post the conflict starting date.
+where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player `\(j\)` happened between players of "treated" countries post the conflict starting date. `\(T_g\)` is yearmonth FEs; `\(\alpha_i\)` is player FEs. `\(u_{ijg}\)` is the idiosyncratic shock.
 
 `\(Y_{ijg}\)` includes performance e.g., mistakes, blunders; game outcomes e.g., win, loss; and the choice of game complexity.
   - Secondary outcomes: "How the game ended": e.g., "agree" to a draw, "stalling" a game; game length (measured by total number of moves).
@@ -388,11 +388,16 @@ where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player
 # Takeaways
 
 - Conflicts impact the quality of moves made by chess players, but no evidence for "aggressive" games played.
-  - Low effort and/or high emotional response to conflict.
-- Impact is not uniform: Armenian-Azerbaijani conflict showed larger coefficients.
-  - Public support for the conflict? Russia consistently shows weak support.
-- Players were more resilient, played longer games and resigned less often post conflict.
-- (not presented) No clear heterogeneity by player strength and time-control.
+- Average quality is better, frequency of mistakes are higher.
+  - Potential channels: Higher effort and/or high emotional response to conflict.
+- Games end up more as draws.
+- More resiliency: longer games with less resigning and more mates.
+- Impact is not uniform:
+  - Lowest rated players show more aggression. Quality improvements come from the highest rating quartile.
+  - More aggression in longer time control: rapid.
+  - About uniform response from both sides.
+- Tie with nationwide public support on the conflict.
+
 ---
 
 class: center, middle
@@ -426,80 +431,6 @@ count: false
 count: false
 &lt;iframe src="https://lichess.org/analysis/8/6k1/3p1n1p/2pP1B1P/2P1pP1B/K1n5/8/8_w_-_-_0_1?color=white" style="width: 400px; height: 644px;" allowtransparency="true" frameborder="0"&gt;&lt;/iframe&gt;
 
----
-count: false
-# Appendix
-
-`\(\\[.2cm]\)`
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="table6_azarm.png" alt="Time-control, AZ-ARM sample" width="70%" /&gt;
-&lt;p class="caption"&gt;Time-control, AZ-ARM sample&lt;/p&gt;
-&lt;/div&gt;
-
----
-count: false
-# Appendix
-
-`\(\\[.2cm]\)`
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="table6_uaru.png" alt="Time-control, UA-RU sample" width="70%" /&gt;
-&lt;p class="caption"&gt;Time-control, UA-RU sample&lt;/p&gt;
-&lt;/div&gt;
-
----
-count: false
-# Appendix
-
-`\(\\[1cm]\)`
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="pretrend_azarm.png" alt="Pre-trend check, AZ-ARM sample" width="80%" /&gt;
-&lt;p class="caption"&gt;Pre-trend check, AZ-ARM sample&lt;/p&gt;
-&lt;/div&gt;
-
----
-count: false
-# Appendix
-
-`\(\\[1cm]\)`
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="pretrend_uaru.png" alt="Pre-trend check, UA-RU sample" width="80%" /&gt;
-&lt;p class="caption"&gt;Pre-trend check, UA-RU sample&lt;/p&gt;
-&lt;/div&gt;
-
----
-count: false
-# Appendix
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="acpl-matchvsnon-new.png" alt="Monthly averages, ACPL, AZ-ARM conflict" width="99%" /&gt;
-&lt;p class="caption"&gt;Monthly averages, ACPL, AZ-ARM conflict&lt;/p&gt;
-&lt;/div&gt;
----
-count: false
-# Appendix
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="diff-matchvsnon-new.png" alt="Monthly averages, Complexity, AZ-ARM conflict" width="99%" /&gt;
-&lt;p class="caption"&gt;Monthly averages, Complexity, AZ-ARM conflict&lt;/p&gt;
-&lt;/div&gt;
----
-count: false
-# Appendix
-
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="acpl-uaru-matchvsnon.png" alt="Monthly averages, ACPL, UA-RU conflict" width="99%" /&gt;
-&lt;p class="caption"&gt;Monthly averages, ACPL, UA-RU conflict&lt;/p&gt;
-&lt;/div&gt;
-
----
-count: false
-# Appendix
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="diff-uaru-matchvsnon.png" alt="Monthly averages, Complexity, UA-RU conflict" width="99%" /&gt;
-&lt;p class="caption"&gt;Monthly averages, Complexity, UA-RU conflict&lt;/p&gt;
-&lt;/div&gt;
 
 
     </textarea>
