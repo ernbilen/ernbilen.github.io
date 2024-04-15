@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Nationalism in Online Games: Impacts of International Conflicts on Chess Player Behavior</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eren Bilen, Assistant Professor of Data Analytics" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet/leaflet.js"></script>
+    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="libs/proj4/proj4.min.js"></script>
+    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-binding/leaflet.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Nationalism in Online Games: Impacts of International Conflicts on Chess Player Behavior
+]
+.subtitle[
+## ⚔<br/>with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)
+]
+.author[
+### Eren Bilen, Assistant Professor of Data Analytics
+]
+.institute[
+### Dickinson College
+]
+.date[
+### SEA 2023 [3.B.05] Economics of Conflict, Nov 20, 2023
+]
+
+---
+
+
+&lt;style&gt;
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+&lt;/style&gt;
+
+&lt;!--
+.caption:before {
+  content:"Figure: ";
+  font-weight: bold;
+} --&gt;
+
+
+
+
+
+
+
+`\(\\[1cm]\)`
+&lt;img src="chat.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+---
+
+**Research question:**
+- Is nationalism "a thing" in online platforms? 
+
+--
+  - Do participants response to international conflicts? &lt;br&gt; Behavioral responses, aggressiveness..
+  
+--
+- Potentially problematic for the platform. (Organizer's POV)
+  
+--
+
+&lt;br&gt;
+
+- Broader: Do *residents* of countries get more hostile towards each other during a war?
+
+--
+
+&lt;blockquote&gt;Or, is war "just politics"?&lt;/blockquote&gt;
+
+
+
+---
+# Obervational data?
+- An RCT to answer this research question is infeasible.
+- Data from individuals' interactions, while their countries are at war against each other?
+
+--
+... sports?
+
+--
+- No international contest between two countries during a war
+  - E.g., Russian soccer team was banned from competing in the 2022 World Cup in Qatar.
+  
+--
+&lt;br&gt;
+- Online platforms?
+
+--
+- [chess.com](https://chess.com) operates 24/7! (the biggest online chess platform)
+  - ~30,000 games happen each hour worldwide
+  
+---
+
+# Conflicts
+
+Uppsala Conflict Data Program (UCDP) Dyadic Dataset version 23.1
+
+- Two "countries"
+- "Substantial" military involvement (&gt;1,000 number of soldiers actively engaged)
+    - Excluding (for now) small "border clashes", e.g., between India and Pakistan, China...
+- Since 2010 (that's when chess.com's data becomes available)
+  - Excluding (for now) the recent Israeli-Palestinian conflict
+
+---
+
+# Conflicts
+
+Nagorno-Karabakh conflict between Azerbaijan and Armenia, Oct-Nov 2020
+
+~5,000-10,000 casualties (mostly military)
+
+
+```r
+library(leaflet)
+leaflet() %&gt;% addTiles() %&gt;% setView(43.1, 41.5, zoom = 5)
+```
+
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5be6ce4f8a343866c2d1" style="width:100%;height:288px;"></div>
+<script type="application/json" data-for="htmlwidget-5be6ce4f8a343866c2d1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[41.5,43.1],5,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+
+# Conflicts
+
+Conflict between Ukraine and Russia, Feb 2022-cont.
+
+\&gt;500,000 casualties (military and civilian)
+
+
+```r
+library(leaflet)
+leaflet() %&gt;% addTiles() %&gt;% setView(33.1, 51.5, zoom = 4)
+```
+
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-713c3132192d2d6d1752" style="width:100%;height:288px;"></div>
+<script type="application/json" data-for="htmlwidget-713c3132192d2d6d1752">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.5,33.1],4,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+# How to proceed?
+- We web-scraped games played by Armenian, Azerbaijani, Ukrainian, and Russian players before and after the start of conflict
+
+  - Arm-Az: ~13,000 games with 6,000 during conflict
+  - Ukr-Ru: ~80,000 games with 20,000 during conflict
+  
+- More refined research question: Do people (chess players) reflect international conflict on their behavior?
+- Outcomes we look at
+  - How does each player perform? I.e., accuracy
+  - Do they play more "aggressively"?
+  - Mechanisms? Does the impact depend on who initiated the war, army size, public support?
+
+---
+# Relevant Literature
+
+- Conflicts alter perception and foster identity: Akerlof and Kranton (2000, QJE), Caceres-Delpiano et. al. (2021, JPubE), Gehring (2022, EJ), among others.
+  - Dawson and Dabson (2010, JEconPsych): Referee bias by nationality
+  - Depetris-Chauvin et. al. (2020, AER): Africa Cup of Nations &amp; civil conflict
+
+- Emotional responses to "news": Sharkey and Shen (2021, PNAS): Mass shootings in the U.S., Guo and An (2022, JDevE): Terrorist attacks in Africa
+
+- Performance under "stress": Cahlíková et. al. (2020, MS) etc.
+
+  
+&lt;!--
+  - Caruso et. al. (2017): Referee decisions
+  - Miguel et. al. (2010): Violent behavior on the pitch --&gt;
+
+---
+
+# A simple model
+
+`$$U_{y, i, j}  = \alpha_y+\beta_{y, j} \quad y\in\{win, draw, loss\}$$`
+
+where `\(U_{y, i, j}\)` is the utility player `\(i\)` obtains from an outcome `\(y\)` against opponent `\(j\)`. Assume 
+
+`$$\begin{cases}win &amp; \text{with probability } p(a) \\
+     loss &amp; \text{with probability } q(a) \\
+     draw &amp; \text{with probability } 1-p(a)-q(a)\end{cases}$$`
+
+`$$\small\begin{align}\label{eq:5}
+    &amp;\max_{a} \mathbb{E}[U_{y, i, j}] \\
+    &amp;\max_{a} p(a)\big(\alpha_{win}+\beta_{win, j}\big) +\big(1-p(a)-q(a)\big)\big(\alpha_{draw}+\beta_{draw, j}\big)+q(a)\big(\alpha_{loss}+\beta_{loss, j}\big)  \nonumber
+\end{align}$$`
+
+`\(\Rightarrow\)` More pleasure from beating a hostile opponent rises aggression, but an isolated increase in disutility from losing against a hostile opponent lowers aggression. (ambigious net effect)
+
+`\(\Rightarrow\)` Performance: improves with effort, but declines with mental pressure/stress with playing against an oppoenent from hostile nation. (ambigious net effect)
+
+---
+
+# Chess data
+
+`\(\\[1cm]\)`
+&lt;img src="image7.png" width="40%" style="display: block; margin: auto;" /&gt;
+.center[.caption[**Figure:** A chess board]]
+
+---
+# Chess data
+&lt;img style="max-width: 80%; height: auto; " src="image1.png" /&gt;
+
+---
+
+# Chess data
+
+`\(\\[1cm]\)`
+&lt;img src="image2.png" width="40%" style="display: block; margin: auto;" /&gt;
+.center[.caption[**Figure:** Stockfish, estimated ELO (strength) as of 2023: 3544]]
+---
+
+# Chess data
+
+`\(\\[1cm]\)`
+&lt;img src="eval.png" width="60%" style="display: block; margin: auto;" /&gt;
+.center[.caption[**Figure:** Computer evaluation for Keymer vs. Carlsen (2019)]]
+
+
+`$$\overline{error_{ig}} = \frac{\sum\nolimits_{m=1}^{M} \left|C^{computer}_{igm} - C^{player}_{igm}\right|}{M}$$`
+
+---
+
+# Chess data: Risk &amp; Board Complexity
+- Aggressiveness/"risk level" of a chess game? 
+  - Gerdes and Gransmark (2010, Labour Econ); Dreber et. al. (2013, JEBO): opening strategy
+  - Bilen and Matros (2023, JEBO): neural-network
+- Estimate probability of making a mistake on a given position
+  - Most positions are unique, so can't look at historical data
+  - **Solution:** Machine learning, e.g., a neural network that learns the "types" of positions and where mistakes happen the most
+  - Trained on a separate sample with 25,000 games played in OTB tournaments, ~2 million moves
+  - Use the model to estimate the complexity of games in the conflict sample
+
+&lt;img src="image3.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Chess data: Board Complexity
+
+`\(\\[1cm]\)`
+&lt;img src="network.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Chess data: Board Complexity
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="image5.png" alt="Histograms for ACPL (actual mistakes) vs. Complexity (estimated mistakes) mean ACPL = 72, estimated mean ACPL = 27" width="80%" /&gt;
+&lt;p class="caption"&gt;Histograms for ACPL (actual mistakes) vs. Complexity (estimated mistakes) mean ACPL = 72, estimated mean ACPL = 27&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Chess data: Board Complexity
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="image6.png" alt="Scatterplot of ACPL (actual mistakes) against Complexity (estimated mistakes) slope = 2.32 with SE=.03" width="60%" /&gt;
+&lt;p class="caption"&gt;Scatterplot of ACPL (actual mistakes) against Complexity (estimated mistakes) slope = 2.32 with SE=.03&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Empirical Strategy
+
+- "Differences in Differences"
+  - E.g., Ukrainian vs. Russian players before and after the conflict.
+  - Their games against other non-conflict countries before and after the conflict
+- No variation in treatment timing: post same for everyone.
+- How do users get matched? Random. BUT, can someone "refuse" to play? Yes. (estimate the probability of "friendliness" through friend lists.)
+
+
+`\(Y_{ijg}=\gamma H_{ijg}+\pmb{X_{ijg}}'\pmb{\beta}+T_g+\alpha_i+u_{ijg}\)`
+
+where `\(H_{ijg}\)` equals 1 if a game `\(g\)` between player `\(i\)` and player `\(j\)` happened between players of "treated" countries post the conflict starting date.
+
+`\(Y_{ijg}\)` includes performance e.g., mistakes, blunders; game outcomes e.g., win, loss; and the choice of game complexity.
+  - Secondary outcomes: "How the game ended": e.g., "agree" to a draw, "stalling" a game; game length (measured by total number of moves).
+  
+---
+
+# Results
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="acceptance-azarm.png" alt="Number of games played on chess.com" width="90%" /&gt;
+&lt;p class="caption"&gt;Number of games played on chess.com&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="acceptance-uaru.png" alt="Number of games played on chess.com" width="90%" /&gt;
+&lt;p class="caption"&gt;Number of games played on chess.com&lt;/p&gt;
+&lt;/div&gt;
+---
+
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table1_azarm.png" alt="Differences in Differences regression results, AZ-ARM conflict (all sample)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results, AZ-ARM conflict (all sample)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table2_azarm.png" alt="Differences in Differences regression results (Azeri players)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results (Azeri players)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table3_azarm.png" alt="Differences in Differences regression results (Armenian players)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results (Armenian players)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table4_azarm.png" alt="Differences in Differences regression results: game outcomes" width="53%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results: game outcomes&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table5_azarm.png" alt="Differences in Differences regression results: secondary outcomes" width="95%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results: secondary outcomes&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-azarm1.png" alt="Event study, AZ-ARM, Complexity" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, AZ-ARM, Complexity&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-azarm2.png" alt="Event study, AZ-ARM, ACPL" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, AZ-ARM, ACPL&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-azarm3.png" alt="Event study, AZ-ARM, TotalBlunder" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, AZ-ARM, TotalBlunder&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-azarm4.png" alt="Event study, AZ-ARM, TotalMistake" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, AZ-ARM, TotalMistake&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table1_uaru.png" alt="Differences in Differences regression results, UA-RU conflict (all sample)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results, UA-RU conflict (all sample)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table2_uaru.png" alt="Differences in Differences regression results (Ukrainian players)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results (Ukrainian players)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table3_uaru.png" alt="Differences in Differences regression results (Russian players)" width="60%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results (Russian players)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table4_uaru.png" alt="Differences in Differences regression results: game outcomes" width="55%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results: game outcomes&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table5_uaru.png" alt="Differences in Differences regression results: secondary outcomes" width="95%" /&gt;
+&lt;p class="caption"&gt;Differences in Differences regression results: secondary outcomes&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-uaru1.png" alt="Event study, UA-RU, Complexity" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, UA-RU, Complexity&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-uaru2.png" alt="Event study, UA-RU, ACPL" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, UA-RU, ACPL&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-uaru3.png" alt="Event study, UA-RU, TotalBlunder" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, UA-RU, TotalBlunder&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Results
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="event-uaru4.png" alt="Event study, UA-RU, TotalMistake" width="80%" /&gt;
+&lt;p class="caption"&gt;Event study, UA-RU, TotalMistake&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Takeaways
+
+- Conflicts impact the quality of moves made by chess players, but no evidence for "aggressive" games played.
+  - Low effort and/or high emotional response to conflict.
+- Impact is not uniform: Armenian-Azerbaijani conflict showed larger coefficients.
+  - Public support for the conflict? Russia consistently shows weak support.
+- Players were more resilient, played longer games and resigned less often post conflict.
+- (not presented) No clear heterogeneity by player strength and time-control.
+---
+
+class: center, middle
+count: false
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+Backend support from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+
+For questions and comments, you can reach me at
+[**bilene@dickinson.edu**](bilene@dickinson.edu).
+
+&lt;img src="qr.png" width="15%" style="display: block; margin: auto;" /&gt;
+
+---
+count: false
+# Appendix
+
+&lt;img src="deepblue.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+.center[.caption[**Figure:** Kasparov vs. Deep Blue, 1997]]
+
+---
+count: false
+# Appendix
+&lt;img src="shannon.png" width="90%" style="display: block; margin: auto;" /&gt;
+.center[.caption[**Figure:** Claude Shannon (1950) "Programming a Computer for Playing Chess"]]
+
+---
+count: false
+&lt;iframe src="https://lichess.org/analysis/8/6k1/3p1n1p/2pP1B1P/2P1pP1B/K1n5/8/8_w_-_-_0_1?color=white" style="width: 400px; height: 644px;" allowtransparency="true" frameborder="0"&gt;&lt;/iframe&gt;
+
+---
+count: false
+# Appendix
+
+`\(\\[.2cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table6_azarm.png" alt="Time-control, AZ-ARM sample" width="70%" /&gt;
+&lt;p class="caption"&gt;Time-control, AZ-ARM sample&lt;/p&gt;
+&lt;/div&gt;
+
+---
+count: false
+# Appendix
+
+`\(\\[.2cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="table6_uaru.png" alt="Time-control, UA-RU sample" width="70%" /&gt;
+&lt;p class="caption"&gt;Time-control, UA-RU sample&lt;/p&gt;
+&lt;/div&gt;
+
+---
+count: false
+# Appendix
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="pretrend_azarm.png" alt="Pre-trend check, AZ-ARM sample" width="80%" /&gt;
+&lt;p class="caption"&gt;Pre-trend check, AZ-ARM sample&lt;/p&gt;
+&lt;/div&gt;
+
+---
+count: false
+# Appendix
+
+`\(\\[1cm]\)`
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="pretrend_uaru.png" alt="Pre-trend check, UA-RU sample" width="80%" /&gt;
+&lt;p class="caption"&gt;Pre-trend check, UA-RU sample&lt;/p&gt;
+&lt;/div&gt;
+
+---
+count: false
+# Appendix
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="acpl-matchvsnon-new.png" alt="Monthly averages, ACPL, AZ-ARM conflict" width="99%" /&gt;
+&lt;p class="caption"&gt;Monthly averages, ACPL, AZ-ARM conflict&lt;/p&gt;
+&lt;/div&gt;
+---
+count: false
+# Appendix
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="diff-matchvsnon-new.png" alt="Monthly averages, Complexity, AZ-ARM conflict" width="99%" /&gt;
+&lt;p class="caption"&gt;Monthly averages, Complexity, AZ-ARM conflict&lt;/p&gt;
+&lt;/div&gt;
+---
+count: false
+# Appendix
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="acpl-uaru-matchvsnon.png" alt="Monthly averages, ACPL, UA-RU conflict" width="99%" /&gt;
+&lt;p class="caption"&gt;Monthly averages, ACPL, UA-RU conflict&lt;/p&gt;
+&lt;/div&gt;
+
+---
+count: false
+# Appendix
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="diff-uaru-matchvsnon.png" alt="Monthly averages, Complexity, UA-RU conflict" width="99%" /&gt;
+&lt;p class="caption"&gt;Monthly averages, Complexity, UA-RU conflict&lt;/p&gt;
+&lt;/div&gt;
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(https://pbs.twimg.com/profile_images/1121082444596350976/IH7Sq90N_400x400.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
