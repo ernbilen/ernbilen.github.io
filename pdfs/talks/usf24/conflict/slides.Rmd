@@ -3,7 +3,7 @@ title: "Nationalism in Online Games: Impacts of International Conflicts on Chess
 subtitle: "⚔<br/>with Eren Bilen (Dickinson College), Nino Doghonadze (Uber), David Smerdon (U of Queensland)"
 author: "Robizon Khubulashvili, Assistant Professor of Economics"
 institute: "University of San Francisco"
-date: "April 26, 2024"
+date: "April 16, 2024"
 output:
   xaringan::moon_reader:
     lib_dir: libs
