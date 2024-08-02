@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>When AI Gives Bad Advice: Experimental Evidence on the Effect of Chatbots on Students’ Critical Thinking   🤖</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eren Bilen, Assistant Professor of Data Analytics" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# When AI Gives Bad Advice: Experimental Evidence on the Effect of Chatbots on Students’ Critical Thinking <br> 🤖
+]
+.subtitle[
+## with Justine Hervé (Stevens Institute of Technology)
+]
+.author[
+### Eren Bilen, Assistant Professor of Data Analytics
+]
+.institute[
+### Dickinson College
+]
+.date[
+### LACBEE 2024, Colorado College, Aug 1-2, 2024
+]
+
+---
+
+
+&lt;style&gt;
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+&lt;/style&gt;
+
+&lt;!--
+.caption:before {
+  content:"Figure: ";
+  font-weight: bold;
+} --&gt;
+
+
+
+
+
+
+
+**Research question:**
+
+&lt;blockquote&gt;Do students exercise critical thinking when interacting with Gen-AI?&lt;/blockquote&gt;
+
+
+**Background:**
+
+Positive gains in worker settings. (Brynjolfsson et. al. 2023; Dell'Acqua et. al. 2023), ~30% speed and quality
+
+Little is known about its impact on the students (future workers)
+
+- Gen-AI potentially raises student productivity: good 👍
+
+- But if just relay information without filtering: bad 👎
+  
+
+High prod. doesn't mean the students' cognitive ability "improved", could be like they are "outsourcing" the "thinking".
+
+Human capital being substituted during work with Gen-AI?
+
+---
+
+**Setup**:
+
+First motivate why students shouldn't outsource from Gen-AI verbatim:
+
+**Field experiment:** Reaching out to professors as a fictituous student.
+
+`$$\\[.1cm]$$`
+&lt;div style="max-width: 500px; margin: auto; font-size: 70%;"&gt;
+
+Subject: Question about AP credit for calculus AB and statistics &lt;br&gt;&lt;br&gt;
+
+Dear Prof. X,&lt;br&gt;
+I hope this email finds you well.&lt;br&gt;
+My name is John, I’m a rising senior in high school. I am writing because I’m researching which courses could help me prepare for undergrad studies in economics and I’d like to get your opinion on the matter.&lt;br&gt;
+I am thinking of taking calculus AB and statistics for AP credits but I am not sure if this is the right thing to do, since I might not manage to get a perfect score in both of them. Since you're an economics professor, I'd expect you to have a pretty clear opinion on the matter, and to be the best person to answer this.&lt;br&gt;
+So, here is my question: would you still recommend taking both courses I mentioned if I don’t manage to get an A in both these classes? Any suggestions or insights you might have about this would be very helpful.&lt;br&gt;
+Thank you for taking the time to read this email, have a nice day.&lt;br&gt;
+Best,&lt;br&gt;
+John
+&lt;/div&gt;
+
+--
+
+From human 👶 (168 words)
+
+---
+
+**Setup**:
+
+First motivate why students shouldn't outsource from Gen-AI verbatim:
+
+**Field experiment:** Reaching out to professors as a fictituous student.
+
+`$$\\[.1cm]$$`
+&lt;div style="max-width: 500px; margin: auto; font-size: 70%;"&gt;
+
+Subject: Inquiry regarding AP credit for calculus AB and statistics &lt;br&gt; &lt;br&gt;
+Dear Prof. X, &lt;br&gt;
+I trust this message finds you well. My name is John, and I am a rising senior with a keen interest in pursuing economics as my major. In my research, I've come across the potential benefits of studying calculus and statistics in high school, particularly through AP credit, to better prepare for undergraduate studies in economics. &lt;br&gt;
+I am reaching out to seek your advice on the matter. I am considering taking AP credit for both calculus AB and statistics, but I have some concerns. Specifically, if, for any reason, I am unable to achieve an A grade in both courses, I am uncertain about the potential impact on my preparation for the economics major. &lt;br&gt;
+Understanding the rigor of the economics program, I value your expertise and would greatly appreciate any guidance or insights you could provide. Knowing whether achieving an A in both courses is a crucial factor for success in the economics major would help me make informed decisions about my academic path.&lt;br&gt;
+Thank you very much for your time and consideration. &lt;br&gt;
+Best, &lt;br&gt;
+John
+&lt;/div&gt;
+
+--
+
+From ChatGPT 🤖 (178 words)
+
+---
+
+Emails to be sent out to department chairs, undergraduate coordinators, &lt;br&gt; a random sample of asst. and assoc. profs at R1/R2s and LACs. 
+
+(Don't worry, you are not included in the email list since you are here!)
+
+- Treatment 1: Email written by a human
+- Treatment 2: Email written by ChatGPT
+
+*outcome: response rate*
+
+To maximize response, the student's name is "John Nielson".
+
+Side note: IRB exemption received.
+
+Side note: We have (pilot) surveyed CloudResearch workers for their opinion on which email was written by ChatGPT
+
+- Human email received ~30% of the votes for ChatGPT
+- ChatGPT email received ~80% ChatGPT
+
+---
+
+**Online experiments on CloudResearch:**
+
+Do students follow ChatGPT "blindly" i.e., lack of critical thinking
+
+1) Students solve a math question.
+- Treatment 1: Receives a correct suggestion from ChatGPT
+- Treatment 2: Receives a wrong suggestion from ChatGPT
+- Control: No suggestion
+
+*outcome: correct response rate*
+
+We initially started with
+
+&lt;img src="wrong.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="right.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+--
+
+- Prelim. result: All treatments gave ~80% correctness.
+- How do we ensure CloudResearch workers don't go to ChatGPT 4o themselves... we can't.
+
+---
+&lt;img src="short.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+&lt;img src="short-gpt.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+&lt;img src="long.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+&lt;img src="long-gpt.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+Will run this after the conference!
+
+My expectation: control group --&gt; low performance (despite targeting &lt;br&gt; STEM students)
+
+But if both treatments show equally high performance --&gt; good!
+
+If the wrong suggestion shows low performance and the right suggestion shows high --&gt; bad.
+
+---
+
+2) Students write an essay on a controversial topic.
+
+&lt;blockquote&gt;Should there be gun control? Please tell us about your opinion &lt;br&gt; with a 150 word essay. Your essay will be graded based on its quality (rubric provided below). Which side of the argument you pick won't matter. &lt;/blockquote&gt;
+
+- Treatment: Receives ChatGPT's "opinion" on the topic
+- Control: No suggestion
+
+&lt;img src="gun.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+*outcome: the side the student picks, similarity to ChatGPT's prompt, time taken*
+post: ask political stance on a 1-10 scale &lt;br&gt;
+problem: what if the control group outsources this work to ChatGPT too?
+
+---
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;img src="thinking.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+&lt;div style="text-align: center;"&gt;
+Suggestions..?
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;a href="mailto:bilene@dickinson.edu"&gt;bilene@dickinson.edu&lt;/a&gt;
+
+&lt;/div&gt;
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(https://pbs.twimg.com/profile_images/1121082444596350976/IH7Sq90N_400x400.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
