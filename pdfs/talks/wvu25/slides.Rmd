@@ -153,6 +153,13 @@ leaflet() %>% addTiles() %>% setView(35.1, 35.5, zoom = 5)
   - Do they play more "aggressively"?
   - Mechanisms? Does the impact depend on who initiated the war, army size, public support?
 
+
+---
+
+
+```{r,echo=F, out.width="70%",fig.align="center",fig.cap="Chess.com interface"}
+knitr::include_graphics("chesscom.png")
+```
 ---
 # Relevant Literature
 
