@@ -51,13 +51,13 @@ Why and how is this happening?
 
 --
 
-**Our research question:**
-
-<blockquote>Do users exercise critical thinking when interacting with Gen-AI?</blockquote>
+**Critical thinking:** ability to evaluate and process information.
 
 --
 
-**Critical thinking:** ability to evaluate and process information.
+**Our research question:**
+
+<blockquote>Do users exercise critical thinking when interacting with Gen-AI?</blockquote>
 
 --
 
