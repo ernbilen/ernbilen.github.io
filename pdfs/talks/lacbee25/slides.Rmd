@@ -1,6 +1,6 @@
 ---
 title: "Collaborating with an Intelligent but Hallucinating Partner: Human-AI Interaction Under Asymmetric Information<br> 🤖"
-subtitle: "with Ayse Deniz Bilen Mehmeti (USC)"
+subtitle: "with Deniz Bilen (USC)"
 author: "Eren Bilen, Assistant Professor of Data Analytics"
 institute: "Dickinson College"
 date: "LACBEE 2025, Middlebury College, June 23-24, 2025"
@@ -178,7 +178,7 @@ cat('
 ')
 ```
 
-Chatbox interface will not allow image uploading (to prevent cheating). Gen-AI in our chatbox will be given their image and the human player will be given theirs.
+Chatbox interface will not allow image uploading (to prevent cheating). Gen-AI in our chatbox will be given their image and the human participant will be given theirs.
 
 Outcomes: performance, duration, types of queries (information requested or given?), length of text received and written
 
