@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Collaborating with an Intelligent but Hallucinating Partner 🤖</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eren Bilen, Assistant Professor of Data Analytics" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Collaborating with an Intelligent but Hallucinating Partner 🤖
+]
+.subtitle[
+## with Deniz Bilen (USC)
+]
+.author[
+### Eren Bilen, Assistant Professor of Data Analytics
+]
+.institute[
+### Dickinson College
+]
+.date[
+### Dinner &amp; Dialogue at Burgess Institute, Oct 1, 2025
+]
+
+---
+
+
+&lt;style&gt;
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+&lt;/style&gt;
+
+&lt;!--
+.caption:before {
+  content:"Figure: ";
+  font-weight: bold;
+} --&gt;
+
+
+
+
+
+
+&lt;br&gt;
+**Open questions:**
+
+&lt;blockquote&gt;Can Gen-AI be an effective partner in collaborative settings?&lt;/blockquote&gt;
+
+&lt;blockquote&gt;How do users handle Gen-AI hallucinations?&lt;/blockquote&gt;
+
+- AI hallucinations one of the biggest issues OpenAI has been trying to (somewhat succesfully) deal with. (See: online search functionality)
+
+- GPT 5, 4o, o3, Gemini, Claude... all hallucinate.
+
+- NY lawyers fined $5,000 for citing fake court cases.
+
+
+**Robust result:** Traditional use of Gen-AI: It's a tool that improves productivity. ~30% higher speed and quality
+
+- Improves your productivity but it hallucinates.
+
+- Can it fully substitute a human worker?
+
+Companies that are piloting fully autonomous agents:
+- Banks: JPMorgan, Citi, Goldman Sachs
+- Microsoft via Copilot studio
+- Duolingo, among others.
+
+
+&lt;!--
+- In human-AI partnerships how do workers accommodate hallucinations?
+- Is human-AI communication more efficient than human-human communication under hallucination? --&gt;
+
+---
+`$$\\[1cm]$$`
+**A useful finding from my earlier work:**
+
+- Humans over-trust in AI output: Bilen &amp; Herve 2024
+
+
+&lt;img src="version1.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="solution1.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;img src="crit1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Can Gen-AI (ChatGPT) be a reliable autonomous partner?
+
+Do you want to participate?
+
+&lt;img src="qr.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;br&gt;&lt;br&gt;
+**Experimental Setup**: Online experiments on Cloudresearch
+
+Main experiment: Gen-AI as an autonomous collaborative partner on a &lt;br&gt; task with the possibility of hallucination.
+
+Setup: Participants are given only one side of 3 "find the difference" puzzles.
+
+The participants must communicate and find out 1) if their images are identical 2) if there is a difference, the exact difference
+- Control group: Randomly paired with another human partner
+- Treatment: Paired with ChatGPT 4o.
+
+3 chances to get the correct answer.
+
+Secondary experiment: Gen-AI (as a tool) on a task with the possibility of hallucination. Allows for pre-exposure to Gen-AI hallucinations.
+
+Setup: Participants are given 8 "find the difference" puzzles in random order.
+- Control group: No Gen-AI help.
+- Treatment group: Receives ChatGPT 4o's help through our chatbox interface.
+
+
+https://study1-236489323959.us-central1.run.app
+
+---
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;div style="display: flex; justify-content: center; align-items: flex-start;"&gt;
+  &lt;div style="flex: 0 0 auto; text-align: center; margin-right: 10px;"&gt;
+    &lt;img src="team_correctness.png" style="width: 250px;"/&gt;
+    &lt;p style="margin-top: 4px; font-size: 13px;"&gt;Correctness rate&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 0 0 auto; text-align: center; margin: 0 10px;"&gt;
+    &lt;img src="team_attempts.png" style="width: 250px;"/&gt;
+    &lt;p style="margin-top: 4px; font-size: 13px;"&gt;Attempts used&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 0 0 auto; text-align: center; margin-left: 10px;"&gt;
+    &lt;img src="team_duration.png" style="width: 250px;"/&gt;
+    &lt;p style="margin-top: 4px; font-size: 13px;"&gt;Duration (minutes)&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+---
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="msg_length_groups.png" alt="Message length across treatment arms" width="50%" /&gt;
+&lt;p class="caption"&gt;Message length across treatment arms&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+---
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="correctness_pairs.png" alt="Correctness across all treatment arms" width="50%" /&gt;
+&lt;p class="caption"&gt;Correctness across all treatment arms&lt;/p&gt;
+&lt;/div&gt;
+
+
+---
+
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="time_grouped.png" alt="Time spent across treatment arms" width="50%" /&gt;
+&lt;p class="caption"&gt;Time spent across treatment arms&lt;/p&gt;
+&lt;/div&gt;
+
+
+---
+
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="msgcount_distribution.png" alt="Number of messages sent in Task 1" width="80%" /&gt;
+&lt;p class="caption"&gt;Number of messages sent in Task 1&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="msgcount_distribution2.png" alt="Number of messages sent in Task 1" width="80%" /&gt;
+&lt;p class="caption"&gt;Number of messages sent in Task 1&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+
+&lt;br&gt;&lt;br&gt;
+
+**Some preliminary results**
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="correct_by_image.png" alt="Correctness by image" width="70%" /&gt;
+&lt;p class="caption"&gt;Correctness by image&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+`$$\\[.5cm]$$`
+**Discussion**
+
+What kinds of interactions will prevail? How do top performers handle hallucinations?
+- Typically, challenging the AI and persisting pays off! (expert: some users on CloudResearch are more experienced with Gen-AI)
+- An addition: "you should challenge AI" as a reminder. (could run as a treatment anyway)
+
+Post experiment data to be analyzed: 
+- Was Gen-AI helpful?
+- Experience with Gen-AI for daily tasks
+- Satisfaction: Would you have preferred to match with a human (Gen-AI) partner? (for randomly assigned participants)
+
+Experiment 2.1: Participants are given the option to choose if they want a human partner or ChatGPT 4o from the start. Compare their outcomes to random assignment. More cohesion? Regret?
+
+---
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;img src="thinking.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+&lt;div style="text-align: center;"&gt;
+Discussion &amp; questions..?
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;a href="mailto:bilene@dickinson.edu"&gt;bilene@dickinson.edu&lt;/a&gt;
+
+&lt;/div&gt;
+
+
+---
+count: false
+
+`$$\\[2cm]$$`
+
+
+&lt;div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;"&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2correct1.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Your image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2correct2.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Gen-AI&amp;apos;s image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+**If you ask Gen-AI to describe: (outcome on its own!)**
+
+&lt;img src="right.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+---
+count: false
+
+`$$\\[2cm]$$`
+
+
+&lt;div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;"&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2wrong2.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Your image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2wrong1.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Gen-AI&amp;apos;s image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+**If you ask Gen-AI to describe:**
+
+&lt;img src="wrong1.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+---
+count: false
+
+
+&lt;div style="margin-top: 20px; padding: 0; font-size: 0;"&gt;
+  &lt;img src="wrong2.png" style="width: 65%; display: block; margin: 0 auto;"/&gt;
+  &lt;img src="wrong3.png" style="width: 65%; display: block; margin: -5px auto 0 auto;"/&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+
+&lt;div style="margin: 0; padding: 0; font-size: 0;"&gt;
+  &lt;img src="wrong4.png" style="width: 55%; display: block; margin: 0 auto;"/&gt;
+  &lt;img src="wrong5.png" style="width: 55%; display: block; margin: -5px auto 0 auto;"/&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+`$$\\[2cm]$$`
+
+
+&lt;div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;"&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2samewrong1.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Your image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;figure style="margin: 0;"&gt;
+      &lt;img src="exp2samewrong2.png" style="width: 80%; margin-left: -90px;"/&gt;
+      &lt;figcaption style="margin-top: 8px; margin-left: -90px;"&gt;Gen-AI&amp;apos;s image&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+**If you ask Gen-AI to describe:**
+
+
+&lt;div style="margin: 0; padding: 0; font-size: 0;"&gt;
+  &lt;img src="samewrong1.png" style="width: 50%; display: block; margin: 0 auto;"/&gt;
+  &lt;img src="samewrong2.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+
+&lt;div style="margin: 0; padding: 0; font-size: 0;"&gt;
+  &lt;img src="samewrong2.png" style="width: 50%; display: block; margin: 0 auto;"/&gt;
+  &lt;img src="samewrong3.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+&lt;img src="samewrong3.png" width="52%" style="display: block; margin: auto;" /&gt;
+
+---
+count: false
+
+&lt;img src="samewrong4.png" width="52%" style="display: block; margin: auto;" /&gt;
+
+---
+count: false
+
+
+&lt;div style="margin: 0; padding: 0; font-size: 0;"&gt;
+  &lt;img src="samewrong5.png" style="width: 50%; display: block; margin: 0 auto;"/&gt;
+  &lt;img src="samewrong6.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/&gt;
+&lt;/div&gt;
+
+---
+count: false
+
+&lt;img src="samewrong6.png" width="52%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+count: false
+
+**Theory Sketch: Human-AI collaboration under hallucination**
+
+A human is assigned a task with one correct solution.
+
+A Gen-AI assistant proposes a solution `s`, which is:
+
+- Correct with probability `1 - h`
+- Hallucinated (i.e., wrong) with probability `h`, where `h ∈ [0, 1]`
+
+**Stage 1: Gen-AI produces a solution**
+
+The Gen-AI gives a solution `s`. The human observes it, but cannot tell if it's correct without verification.
+
+**Stage 2: Human chooses to:**
+
+*1. Accept AI output without verification*
+
+Expected payoff:
+
+$$
+U_{accept} = (1 - h)V + h(-L)
+$$
+
+where
+
+- `V`: Value of completing the task correctly  
+- `L`: Loss incurred from using an incorrect (hallucinated) solution
+
+
+---
+count: false
+
+*2. Evaluate AI output before using*
+
+Human pays cost `\(c_v\)` and learns the truth. If correct, proceeds with &lt;br&gt; AI solution. If incorrect, human corrects it.  
+
+Expected payoff:  
+
+$$
+U_{verify} = (1-h)(V - c_v) + h(V-c_v-C)
+$$
+$$
+= V - c_v - hC
+$$
+
+where
+
+- `\(c_v\)`: Cost of verifying the AI’s solution 
+- `C`: Cost for the human to do the task alone 
+
+*3. Do the task solo*
+
+Payoff:
+
+$$
+U_{solo} = V - C
+$$
+
+ 
+
+
+---
+count: false
+
+Accept without verification if:
+
+`\(U_{accept} ≥ max(U_{verify}, U_{solo})\)`
+
+Which implies:
+
+$$
+(1 - h)V - hL ≥ V - c_v - hC
+$$
+
+$$
+(1 - h)V - hL ≥ V - C
+$$
+
+Rearranged, these give:
+
+$$
+h ≤ c_v / (V + L - C)
+$$
+
+$$
+h ≤ C / (V + L)
+$$
+
+- Lower `h` (hallucination rate) and
+Higher `\(c_v\)` (verification cost): more likely to accept Gen-AI without checking  
+- Higher `L` (cost of being wrong) makes unverified use more punishing and
+Higher `V` (value of correct answer) increases losses in case of errors: more likely to verify Gen-AI
+- Higher `C` (solo work cost): makes it cheaper to rely on Gen-AI 
+- As `h → 0`: AI becomes a perfect partner; no need to verify
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(https://pbs.twimg.com/profile_images/1121082444596350976/IH7Sq90N_400x400.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

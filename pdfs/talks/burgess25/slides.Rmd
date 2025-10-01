@@ -1,0 +1,552 @@
+---
+title: "Collaborating with an Intelligent but Hallucinating Partner 🤖"
+subtitle: "with Deniz Bilen (USC)"
+author: "Eren Bilen, Assistant Professor of Data Analytics"
+institute: "Dickinson College"
+date: "Dinner & Dialogue at Burgess Institute, Oct 1, 2025"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      after_body: insert-logo.html
+editor_options: 
+  chunk_output_type: console
+---
+
+<style>
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+
+<!--
+.caption:before {
+  content:"Figure: ";
+  font-weight: bold;
+} -->
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r,echo=F}
+#library(countdown)
+#countdown(minutes = 0, seconds = 10, top = 2,left = 5, right = 5)
+```
+
+
+<br>
+**Open questions:**
+
+<blockquote>Can Gen-AI be an effective partner in collaborative settings?</blockquote>
+
+<blockquote>How do users handle Gen-AI hallucinations?</blockquote>
+
+- AI hallucinations one of the biggest issues OpenAI has been trying to (somewhat succesfully) deal with. (See: online search functionality)
+
+- GPT 5, 4o, o3, Gemini, Claude... all hallucinate.
+
+- NY lawyers fined $5,000 for citing fake court cases.
+
+
+**Robust result:** Traditional use of Gen-AI: It's a tool that improves productivity. ~30% higher speed and quality
+
+- Improves your productivity but it hallucinates.
+
+- Can it fully substitute a human worker?
+
+Companies that are piloting fully autonomous agents:
+- Banks: JPMorgan, Citi, Goldman Sachs
+- Microsoft via Copilot studio
+- Duolingo, among others.
+
+
+<!--
+- In human-AI partnerships how do workers accommodate hallucinations?
+- Is human-AI communication more efficient than human-human communication under hallucination? -->
+
+---
+$$\\[1cm]$$
+**A useful finding from my earlier work:**
+
+- Humans over-trust in AI output: Bilen & Herve 2024
+
+
+```{r,echo=F, out.width="55%",fig.align="center"}
+knitr::include_graphics("version1.png")
+```
+
+---
+
+```{r,echo=F, out.width="55%",fig.align="center"}
+knitr::include_graphics("solution1.png")
+```
+
+---
+
+<br><br><br><br><br>
+
+```{r,echo=F, out.width="100%",fig.align="center"}
+knitr::include_graphics("crit1.png")
+```
+
+---
+
+<br><br><br><br>
+
+Can Gen-AI (ChatGPT) be a reliable autonomous partner?
+
+Do you want to participate?
+
+```{r,echo=F, out.width="40%",fig.align="center"}
+knitr::include_graphics("qr.png")
+```
+
+---
+
+<br><br>
+**Experimental Setup**: Online experiments on Cloudresearch
+
+Main experiment: Gen-AI as an autonomous collaborative partner on a <br> task with the possibility of hallucination.
+
+Setup: Participants are given only one side of 3 "find the difference" puzzles.
+
+The participants must communicate and find out 1) if their images are identical 2) if there is a difference, the exact difference
+- Control group: Randomly paired with another human partner
+- Treatment: Paired with ChatGPT 4o.
+
+3 chances to get the correct answer.
+
+Secondary experiment: Gen-AI (as a tool) on a task with the possibility of hallucination. Allows for pre-exposure to Gen-AI hallucinations.
+
+Setup: Participants are given 8 "find the difference" puzzles in random order.
+- Control group: No Gen-AI help.
+- Treatment group: Receives ChatGPT 4o's help through our chatbox interface.
+
+
+https://study1-236489323959.us-central1.run.app
+
+---
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <div style="flex: 0 0 auto; text-align: center; margin-right: 10px;">
+    <img src="team_correctness.png" style="width: 250px;"/>
+    <p style="margin-top: 4px; font-size: 13px;">Correctness rate</p>
+  </div>
+  <div style="flex: 0 0 auto; text-align: center; margin: 0 10px;">
+    <img src="team_attempts.png" style="width: 250px;"/>
+    <p style="margin-top: 4px; font-size: 13px;">Attempts used</p>
+  </div>
+  <div style="flex: 0 0 auto; text-align: center; margin-left: 10px;">
+    <img src="team_duration.png" style="width: 250px;"/>
+    <p style="margin-top: 4px; font-size: 13px;">Duration (minutes)</p>
+  </div>
+</div>
+')
+
+```
+
+
+---
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="50%",fig.align="center",fig.cap="Message length across treatment arms"}
+knitr::include_graphics("msg_length_groups.png")
+```
+
+
+
+---
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="50%",fig.align="center",fig.cap="Correctness across all treatment arms"}
+knitr::include_graphics("correctness_pairs.png")
+```
+
+
+---
+
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="50%",fig.align="center",fig.cap="Time spent across treatment arms"}
+knitr::include_graphics("time_grouped.png")
+```
+
+
+---
+
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="80%",fig.align="center",fig.cap="Number of messages sent in Task 1"}
+knitr::include_graphics("msgcount_distribution.png")
+```
+
+---
+
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="80%",fig.align="center",fig.cap="Number of messages sent in Task 1"}
+knitr::include_graphics("msgcount_distribution2.png")
+```
+
+---
+
+
+<br><br>
+
+**Some preliminary results**
+
+<br><br>
+
+```{r,echo=F, out.width="70%",fig.align="center",fig.cap="Correctness by image"}
+knitr::include_graphics("correct_by_image.png")
+```
+
+---
+
+$$\\[.5cm]$$
+**Discussion**
+
+What kinds of interactions will prevail? How do top performers handle hallucinations?
+- Typically, challenging the AI and persisting pays off! (expert: some users on CloudResearch are more experienced with Gen-AI)
+- An addition: "you should challenge AI" as a reminder. (could run as a treatment anyway)
+
+Post experiment data to be analyzed: 
+- Was Gen-AI helpful?
+- Experience with Gen-AI for daily tasks
+- Satisfaction: Would you have preferred to match with a human (Gen-AI) partner? (for randomly assigned participants)
+
+Experiment 2.1: Participants are given the option to choose if they want a human partner or ChatGPT 4o from the start. Compare their outcomes to random assignment. More cohesion? Regret?
+
+---
+
+<br><br><br>
+
+```{r,echo=F, out.width="55%",fig.align="center"}
+knitr::include_graphics("thinking.png")
+```
+
+
+<div style="text-align: center;">
+Discussion & questions..?
+
+<br><br>
+
+<a href="mailto:bilene@dickinson.edu">bilene@dickinson.edu</a>
+
+</div>
+
+
+---
+count: false
+
+$$\\[2cm]$$
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;">
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2correct1.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Your image</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2correct2.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Gen-AI&apos;s image</figcaption>
+    </figure>
+  </div>
+</div>
+')
+```
+
+---
+count: false
+
+**If you ask Gen-AI to describe: (outcome on its own!)**
+
+```{r,echo=F, out.width="65%",fig.align="center"}
+knitr::include_graphics("right.png")
+```
+
+
+---
+count: false
+
+$$\\[2cm]$$
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;">
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2wrong2.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Your image</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2wrong1.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Gen-AI&apos;s image</figcaption>
+    </figure>
+  </div>
+</div>
+')
+```
+
+---
+count: false
+
+**If you ask Gen-AI to describe:**
+
+```{r,echo=F, out.width="65%",fig.align="center"}
+knitr::include_graphics("wrong1.png")
+```
+
+
+---
+count: false
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="margin-top: 20px; padding: 0; font-size: 0;">
+  <img src="wrong2.png" style="width: 65%; display: block; margin: 0 auto;"/>
+  <img src="wrong3.png" style="width: 65%; display: block; margin: -5px auto 0 auto;"/>
+</div>
+')
+```
+
+---
+count: false
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="margin: 0; padding: 0; font-size: 0;">
+  <img src="wrong4.png" style="width: 55%; display: block; margin: 0 auto;"/>
+  <img src="wrong5.png" style="width: 55%; display: block; margin: -5px auto 0 auto;"/>
+</div>
+')
+```
+
+---
+count: false
+
+$$\\[2cm]$$
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2%;">
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2samewrong1.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Your image</figcaption>
+    </figure>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <figure style="margin: 0;">
+      <img src="exp2samewrong2.png" style="width: 80%; margin-left: -90px;"/>
+      <figcaption style="margin-top: 8px; margin-left: -90px;">Gen-AI&apos;s image</figcaption>
+    </figure>
+  </div>
+</div>
+')
+```
+
+---
+count: false
+
+**If you ask Gen-AI to describe:**
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="margin: 0; padding: 0; font-size: 0;">
+  <img src="samewrong1.png" style="width: 50%; display: block; margin: 0 auto;"/>
+  <img src="samewrong2.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/>
+</div>
+')
+```
+
+---
+count: false
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="margin: 0; padding: 0; font-size: 0;">
+  <img src="samewrong2.png" style="width: 50%; display: block; margin: 0 auto;"/>
+  <img src="samewrong3.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/>
+</div>
+')
+```
+
+---
+count: false
+
+```{r,echo=F, out.width="52%",fig.align="center"}
+knitr::include_graphics("samewrong3.png")
+```
+
+---
+count: false
+
+```{r,echo=F, out.width="52%",fig.align="center"}
+knitr::include_graphics("samewrong4.png")
+```
+
+---
+count: false
+
+```{r, echo=FALSE, results='asis'}
+cat('
+<div style="margin: 0; padding: 0; font-size: 0;">
+  <img src="samewrong5.png" style="width: 50%; display: block; margin: 0 auto;"/>
+  <img src="samewrong6.png" style="width: 50%; display: block; margin: -5px auto 0 auto;"/>
+</div>
+')
+```
+
+---
+count: false
+
+```{r,echo=F, out.width="52%",fig.align="center"}
+knitr::include_graphics("samewrong6.png")
+```
+
+
+
+---
+count: false
+
+**Theory Sketch: Human-AI collaboration under hallucination**
+
+A human is assigned a task with one correct solution.
+
+A Gen-AI assistant proposes a solution `s`, which is:
+
+- Correct with probability `1 - h`
+- Hallucinated (i.e., wrong) with probability `h`, where `h ∈ [0, 1]`
+
+**Stage 1: Gen-AI produces a solution**
+
+The Gen-AI gives a solution `s`. The human observes it, but cannot tell if it's correct without verification.
+
+**Stage 2: Human chooses to:**
+
+*1. Accept AI output without verification*
+
+Expected payoff:
+
+$$
+U_{accept} = (1 - h)V + h(-L)
+$$
+
+where
+
+- `V`: Value of completing the task correctly  
+- `L`: Loss incurred from using an incorrect (hallucinated) solution
+
+
+---
+count: false
+
+*2. Evaluate AI output before using*
+
+Human pays cost $c_v$ and learns the truth. If correct, proceeds with <br> AI solution. If incorrect, human corrects it.  
+
+Expected payoff:  
+
+$$
+U_{verify} = (1-h)(V - c_v) + h(V-c_v-C)
+$$
+$$
+= V - c_v - hC
+$$
+
+where
+
+- $c_v$: Cost of verifying the AI’s solution 
+- `C`: Cost for the human to do the task alone 
+
+*3. Do the task solo*
+
+Payoff:
+
+$$
+U_{solo} = V - C
+$$
+
+ 
+
+
+---
+count: false
+
+Accept without verification if:
+
+$U_{accept} ≥ max(U_{verify}, U_{solo})$
+
+Which implies:
+
+$$
+(1 - h)V - hL ≥ V - c_v - hC
+$$
+
+$$
+(1 - h)V - hL ≥ V - C
+$$
+
+Rearranged, these give:
+
+$$
+h ≤ c_v / (V + L - C)
+$$
+
+$$
+h ≤ C / (V + L)
+$$
+
+- Lower `h` (hallucination rate) and
+Higher $c_v$ (verification cost): more likely to accept Gen-AI without checking  
+- Higher `L` (cost of being wrong) makes unverified use more punishing and
+Higher `V` (value of correct answer) increases losses in case of errors: more likely to verify Gen-AI
+- Higher `C` (solo work cost): makes it cheaper to rely on Gen-AI 
+- As `h → 0`: AI becomes a perfect partner; no need to verify
+
