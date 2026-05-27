@@ -333,7 +333,7 @@ knitr::include_graphics("trend_queen.png")
 
 $\\[-.1cm]$
 ```{r,echo=F, out.width="95%",fig.align="center",fig.cap=""}
-knitr::include_graphics("trend_ACPL.png")
+knitr::include_graphics("trend_acpl.png")
 ```
 
 ---
