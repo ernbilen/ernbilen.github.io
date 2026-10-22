@@ -1,0 +1,548 @@
+[
+  {
+    "name": "david-04",
+    "david_frame": 4,
+    "title": "What a player sees",
+    "backup": false
+  },
+  {
+    "name": "david-05",
+    "david_frame": 5,
+    "title": "What a player sees",
+    "backup": false
+  },
+  {
+    "name": "david-07",
+    "david_frame": 7,
+    "title": "Research questions",
+    "backup": false
+  },
+  {
+    "name": "david-08",
+    "david_frame": 8,
+    "title": "Predictions around participation and performance are not obvious",
+    "backup": false
+  },
+  {
+    "name": "david-09",
+    "david_frame": 9,
+    "title": "Three conflicts",
+    "backup": false
+  },
+  {
+    "name": "records",
+    "david_frame": 10,
+    "title": "The data: 32.4 million games by 33,687 accounts",
+    "backup": false
+  },
+  {
+    "name": "samples",
+    "david_frame": 11,
+    "title": "Two samples used in this paper",
+    "backup": false
+  },
+  {
+    "name": "desc-sample",
+    "david_frame": 12,
+    "title": "The raw-record sample by conflict",
+    "backup": false
+  },
+  {
+    "name": "desc-contact",
+    "david_frame": 13,
+    "title": "How often players meet the other side",
+    "backup": false
+  },
+  {
+    "name": "desc-balance",
+    "david_frame": 14,
+    "title": "Hostile-country games and other games before the war",
+    "backup": false
+  },
+  {
+    "name": "comparison",
+    "david_frame": 15,
+    "title": "Estimation: the same player, two kinds of opponent, before and after",
+    "backup": false
+  },
+  {
+    "name": "before",
+    "david_frame": 17,
+    "title": "Before onset: no pre-trend",
+    "backup": false
+  },
+  {
+    "name": "after",
+    "david_frame": 18,
+    "title": "After onset: negative in every bin",
+    "backup": false
+  },
+  {
+    "name": "headline",
+    "david_frame": 19,
+    "title": "Players conceded less often to hostile-country opponents after war began",
+    "backup": false
+  },
+  {
+    "name": "headline-more",
+    "david_frame": 19,
+    "title": "Players conceded less often to hostile-country opponents after war began",
+    "backup": false
+  },
+  {
+    "name": "scale",
+    "david_frame": 20,
+    "title": "How big is that? Measured against the games a player loses",
+    "backup": false
+  },
+  {
+    "name": "byconflict",
+    "david_frame": 22,
+    "title": "By conflict",
+    "backup": false
+  },
+  {
+    "name": "boundary",
+    "david_frame": 23,
+    "title": "Armenia–Azerbaijan",
+    "backup": false
+  },
+  {
+    "name": "corroboration",
+    "david_frame": 24,
+    "title": "Consistency of results across samples",
+    "backup": false
+  },
+  {
+    "name": "endings",
+    "david_frame": 25,
+    "title": "Where the missing concessions went: checkmate, or the clock",
+    "backup": false
+  },
+  {
+    "name": "lostdef",
+    "david_frame": 26,
+    "title": "Measuring continuation after a position is lost",
+    "backup": false
+  },
+  {
+    "name": "persistence",
+    "david_frame": 27,
+    "title": "Players fought on longer in positions that were already lost",
+    "backup": false
+  },
+  {
+    "name": "checks",
+    "david_frame": 28,
+    "title": "Robustness: the same games became lost, and players did not move their threshold",
+    "backup": false
+  },
+  {
+    "name": "quality",
+    "david_frame": 29,
+    "title": "Move quality: do players play worse?",
+    "backup": false
+  },
+  {
+    "name": "openings",
+    "david_frame": 30,
+    "title": "A different margin: departures from habitual openings",
+    "backup": false
+  },
+  {
+    "name": "sensitivity",
+    "david_frame": 31,
+    "title": "Sensitivity to analysis choices: specification curve",
+    "backup": false
+  },
+  {
+    "name": "flags",
+    "david_frame": 32,
+    "title": "Limitations",
+    "backup": false
+  },
+  {
+    "name": "david-33",
+    "david_frame": 33,
+    "title": "What does it mean to keep playing a lost position?",
+    "backup": false
+  },
+  {
+    "name": "david-34",
+    "david_frame": 34,
+    "title": "Possible implications for business interactions",
+    "backup": false
+  },
+  {
+    "name": "nextsteps",
+    "david_frame": 35,
+    "title": "Next steps",
+    "backup": false
+  },
+  {
+    "name": "david-36",
+    "david_frame": 36,
+    "title": "Conclusion",
+    "backup": false
+  },
+  {
+    "name": "backup-index",
+    "david_frame": 37,
+    "title": "Backup slides (1 of 2): data, design, specification",
+    "backup": true
+  },
+  {
+    "name": "backup-index2",
+    "david_frame": 38,
+    "title": "Backup slides (2 of 2): results in full, dynamics, heterogeneity",
+    "backup": true
+  },
+  {
+    "name": "bk-table1-main",
+    "david_frame": 39,
+    "title": "Backup: the three conflicts and the analysis samples",
+    "backup": true
+  },
+  {
+    "name": "bk-hostile",
+    "david_frame": 40,
+    "title": "Backup: hostile-country games and the comparison set",
+    "backup": true
+  },
+  {
+    "name": "bk-ident",
+    "david_frame": 41,
+    "title": "Backup: identification in words, and the platform facts",
+    "backup": true
+  },
+  {
+    "name": "bk-fe",
+    "david_frame": 42,
+    "title": "Backup: what the fixed effects absorb, and what survives",
+    "backup": true
+  },
+  {
+    "name": "threats",
+    "david_frame": 43,
+    "title": "Backup: threats to identification",
+    "backup": true
+  },
+  {
+    "name": "bk-forest-full",
+    "david_frame": 44,
+    "title": "Backup: per-conflict estimates in both samples",
+    "backup": true
+  },
+  {
+    "name": "bk-composition-full",
+    "david_frame": 45,
+    "title": "Backup: all endings, draws, and game length",
+    "backup": true
+  },
+  {
+    "name": "bk-persistence-full",
+    "david_frame": 46,
+    "title": "Backup: all persistence measures",
+    "backup": true
+  },
+  {
+    "name": "bk-quality-full",
+    "david_frame": 47,
+    "title": "Backup: three measures of play quality",
+    "backup": true
+  },
+  {
+    "name": "bk-openings-full",
+    "david_frame": 48,
+    "title": "Backup: openings by colour, and without Armenia–Azerbaijan",
+    "backup": true
+  },
+  {
+    "name": "bk-speccurve-full",
+    "david_frame": 49,
+    "title": "Backup: the specification curve with the choice matrix",
+    "backup": true
+  },
+  {
+    "name": "anyone",
+    "david_frame": 50,
+    "title": "Backup: is anyone driving it?",
+    "backup": true
+  },
+  {
+    "name": "bk-lit1",
+    "david_frame": 51,
+    "title": "Backup: what we know, conflict and parochialism",
+    "backup": true
+  },
+  {
+    "name": "bk-lit2",
+    "david_frame": 52,
+    "title": "Backup: what we know, markets, institutions, expression",
+    "backup": true
+  },
+  {
+    "name": "bk-eligibility",
+    "david_frame": 53,
+    "title": "Backup: eligibility rules for the engine-analyzed sample",
+    "backup": true
+  },
+  {
+    "name": "bk-frame",
+    "david_frame": 54,
+    "title": "Backup: the sampling frame and the probability-sample caveat",
+    "backup": true
+  },
+  {
+    "name": "bk-flags",
+    "david_frame": 55,
+    "title": "Backup: flag-stability audit (re-scrape, September 2024)",
+    "backup": true
+  },
+  {
+    "name": "bk-flagmeaning",
+    "david_frame": 56,
+    "title": "Backup: what a displayed flag is, and is not",
+    "backup": true
+  },
+  {
+    "name": "bk-table1",
+    "david_frame": 57,
+    "title": "Backup: how Table 1 counts games, observations and accounts",
+    "backup": true
+  },
+  {
+    "name": "bk-2014",
+    "david_frame": 58,
+    "title": "Backup: the Ukraine–Russia 2014 robustness sample",
+    "backup": true
+  },
+  {
+    "name": "bk-robust",
+    "david_frame": 59,
+    "title": "Backup: robustness dimensions tested",
+    "backup": true
+  },
+  {
+    "name": "bk-gamelevel",
+    "david_frame": 60,
+    "title": "Backup: game-level estimation",
+    "backup": true
+  },
+  {
+    "name": "bk-monthly",
+    "david_frame": 61,
+    "title": "Backup: monthly event study, raw-record sample",
+    "backup": true
+  },
+  {
+    "name": "david-62",
+    "david_frame": 62,
+    "title": "Backup: monthly event study, engine-analyzed sample",
+    "backup": true
+  },
+  {
+    "name": "bk-fullwindow",
+    "david_frame": 63,
+    "title": "Backup: three-month bins to month 17",
+    "backup": true
+  },
+  {
+    "name": "bk-pretrends",
+    "david_frame": 64,
+    "title": "Backup: joint pre-onset tests by conflict",
+    "backup": true
+  },
+  {
+    "name": "bk-contact",
+    "david_frame": 65,
+    "title": "Backup: Ukraine–Russia, contact with the other side month by month",
+    "backup": true
+  },
+  {
+    "name": "bk-persistconflict",
+    "david_frame": 66,
+    "title": "Backup: persistence by conflict",
+    "backup": true
+  },
+  {
+    "name": "bk-secondary",
+    "david_frame": 67,
+    "title": "Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)",
+    "backup": true
+  },
+  {
+    "name": "bk-openings",
+    "david_frame": 68,
+    "title": "Backup: the repertoire-deviation index",
+    "backup": true
+  },
+  {
+    "name": "bk-aalength",
+    "david_frame": 69,
+    "title": "Backup: game length in Armenia–Azerbaijan",
+    "backup": true
+  },
+  {
+    "name": "bk-dispersion",
+    "david_frame": 70,
+    "title": "Backup: dispersion of player-level effects",
+    "backup": true
+  },
+  {
+    "name": "bk-rating",
+    "david_frame": 71,
+    "title": "Backup: rating quartiles, concession and persistence",
+    "backup": true
+  },
+  {
+    "name": "bk-activity",
+    "david_frame": 72,
+    "title": "Backup: activity quartiles and the pooled trend test",
+    "backup": true
+  },
+  {
+    "name": "bk-loo",
+    "david_frame": 73,
+    "title": "Backup: leave-one-conflict-out",
+    "backup": true
+  },
+  {
+    "name": "bk-ethics",
+    "david_frame": 74,
+    "title": "Backup: ethics and data governance",
+    "backup": true
+  },
+  {
+    "name": "bk-iran",
+    "david_frame": 75,
+    "title": "Backup: Iran feasibility",
+    "backup": true
+  },
+  {
+    "name": "faq-index",
+    "david_frame": 76,
+    "title": "FAQ",
+    "backup": true
+  },
+  {
+    "name": "faq-lpm",
+    "david_frame": 77,
+    "title": "FAQ: why a linear probability model and not a logit?",
+    "backup": true
+  },
+  {
+    "name": "faq-magnitude",
+    "david_frame": 78,
+    "title": "FAQ: what do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1.46</mn></mrow></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>0.46</mn></mrow></semantics></math> percentage points mean concretely?",
+    "backup": true
+  },
+  {
+    "name": "faq-weighting",
+    "david_frame": 79,
+    "title": "FAQ: why does weighting players equally triple the estimate?",
+    "backup": true
+  },
+  {
+    "name": "faq-exogenous",
+    "david_frame": 80,
+    "title": "FAQ: what exactly is exogenous here, and what is not?",
+    "backup": true
+  },
+  {
+    "name": "faq-pretrends",
+    "david_frame": 81,
+    "title": "FAQ: why should the pre-onset estimates be zero?",
+    "backup": true
+  },
+  {
+    "name": "faq-flags",
+    "david_frame": 82,
+    "title": "FAQ: are flags citizenship?",
+    "backup": true
+  },
+  {
+    "name": "faq-aa",
+    "david_frame": 83,
+    "title": "FAQ: why is Armenia–Azerbaijan null?",
+    "backup": true
+  },
+  {
+    "name": "faq-heterogeneity",
+    "david_frame": 84,
+    "title": "FAQ: why does the paper not claim individual-level heterogeneity?",
+    "backup": true
+  },
+  {
+    "name": "faq-worseplay",
+    "david_frame": 85,
+    "title": "FAQ: could the effect be worse play rather than a choice?",
+    "backup": true
+  },
+  {
+    "name": "faq-independent",
+    "david_frame": 86,
+    "title": "FAQ: why do the two samples count as independent corroboration?",
+    "backup": true
+  },
+  {
+    "name": "faq-conflicts",
+    "david_frame": 87,
+    "title": "FAQ: why these three conflicts?",
+    "backup": true
+  },
+  {
+    "name": "faq-avoid",
+    "david_frame": 88,
+    "title": "FAQ: can players avoid hostile-country opponents?",
+    "backup": true
+  },
+  {
+    "name": "faq-structural",
+    "david_frame": 89,
+    "title": "FAQ: is there a structural model behind this?",
+    "backup": true
+  },
+  {
+    "name": "faq-quit",
+    "david_frame": 90,
+    "title": "FAQ: could players simply have quit on seeing the flag?",
+    "backup": true
+  },
+  {
+    "name": "faq-glossary",
+    "david_frame": 91,
+    "title": "FAQ: glossary",
+    "backup": true
+  },
+  {
+    "name": "motivation",
+    "david_frame": 2,
+    "title": "Concession and the cost of continuing",
+    "backup": true
+  },
+  {
+    "name": "whychess",
+    "david_frame": 3,
+    "title": "Why chess?",
+    "backup": true
+  },
+  {
+    "name": "david-06",
+    "david_frame": 6,
+    "title": "Resignation: a unilateral concession",
+    "backup": true
+  },
+  {
+    "name": "equation",
+    "david_frame": 16,
+    "title": "Estimation: the specification",
+    "backup": true
+  },
+  {
+    "name": "whoseaverage",
+    "david_frame": 21,
+    "title": "Per-player vs per-game estimates",
+    "backup": true
+  }
+]

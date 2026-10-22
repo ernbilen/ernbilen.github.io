@@ -1,0 +1,123 @@
+---
+title: "Additional results"
+subtitle: "St. Louis, 2026"
+author: "Eren Bilen"
+institute: "Dickinson College"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["libs/remark-css/default.css", "styles.css"]
+    lib_dir: libs
+    nature:
+      ratio: "4:3"
+      countIncrementalSlides: false
+---
+
+???
+
+Optional answers and figures. This is a separate deck; none of these slides follows the final slide of the main talk automatically.
+
+---
+name: weights
+
+# Players or games?
+
+| Pooled resignation estimate | Change | p-value |
+|:--|--:|--:|
+| Each player weighted equally | −1.46 pp | .022 |
+| Each game weighted equally | −0.46 pp | .0005 |
+
+<br/>
+
+- Equal game weights give more influence to very active players
+- The two estimates answer different averaging questions
+- Both measure changes relative to the same player's other games
+
+???
+
+**Answer:** Equal-player weights give occasional players more weight than equal-game weights do. The gap is consistent with a smaller response among the most active players, but comparisons across activity groups are imprecise. It is not evidence that an individual's response fades through repeated contact.
+
+**Source:** David's deck, headline and Per-player vs per-game estimates.
+
+---
+name: conflicts
+
+# Resignation by conflict
+
+| Conflict | Change (pp) | p-value |
+|:--|--:|--:|
+| Armenia–Azerbaijan | −0.06 | .85 |
+| Ukraine–Russia | −0.34 | .031 |
+| Israel–Palestine | −0.94 | .053 |
+| Pooled | −0.46 | .0005 |
+
+<br/>
+
+- Raw-record sample; **each game weighted equally**
+- The Israel–Palestine estimate is imprecise and borderline at a 5% threshold
+- No detectable resignation change in Armenia–Azerbaijan
+
+???
+
+**Source:** David's deck, By conflict and forest_raw.pdf. Negative means a decline in resignation probability against opposing-country opponents after onset, relative to the same player's other games. P-values are rounded as in the supplied figure. A nonsignificant result is not proof of zero effect.
+
+---
+name: quality
+
+# Move quality
+
+<img class="figure-wide" src="assets/quality_main.png" alt="Average engine-evaluated inaccuracy decreases by 0.229 centipawns per move, a 0.52% decrease from 44.1." />
+
+- A small decrease in engine-evaluated error: **−0.229 centipawns per move**
+- No detectable change in rating-adjusted performance
+
+???
+
+**Source:** David's deck, Move quality: do players play worse?; quality_main.pdf. Error: SE 0.104, p = .027. Rating-adjusted performance p = .83. Do not describe the statistically detectable error difference as a large practical improvement.
+
+---
+name: openings
+
+# Opening repertoires
+
+<img class="figure-wide" src="assets/openings_main.png" alt="Repertoire deviation rises by 0.087 overall, with the largest increase, 0.861, in Armenia–Azerbaijan." />
+
+- Each opening is scored against the player's **own pre-war repertoire**
+- Higher index = an opening that player had used less often
+
+???
+
+**Answer:** The index is minus the log of the opening's pre-war frequency for that player. An increase of 0.1 corresponds to an opening used roughly 10 percent less often before the war. This is not an aggressiveness index. Armenia–Azerbaijan has the largest departure; its resignation effect is not detectably different from zero.
+
+**Source:** David's deck, A different margin: departures from habitual openings; openings_main.pdf.
+
+---
+name: pretrend
+
+# Before the war
+
+<img class="figure-wide" src="assets/event_pre.png" alt="David's pre-onset event study compares three-month bins with the month immediately before onset." />
+
+- Pre-onset bins are jointly indistinguishable from zero: **p = .32**
+- This check supports the comparison; it cannot establish the assumption by itself
+
+???
+
+**Source:** David's deck, Before onset: no pre-trend; event_pre.pdf. Raw-record sample; equal game weights. Bars show 95% confidence intervals. The reference period is the month immediately before onset.
+
+---
+name: limitations
+
+# What could affect the comparison?
+
+- Displayed flags are self-reported; they need not mean citizenship
+- We cannot observe games aborted before the first move
+- Players' availability and the opponents they meet can change
+- Contact with the other side fell after onset, especially in Ukraine–Russia
+- The records show behavior, not the player's motive
+
+???
+
+**Answer:** Russia's April 23, 2022 block of the platform is relevant to changing opponent availability. Calendar controls do not remove every possible change in who meets whom. The contact fall is consistent with a supply-of-opponents explanation, while some avoidance cannot be ruled out. The flag-stability audit is reassuring but does not make flags citizenship. The pooled result is not a statement that every war or every individual produces the same behavior.
+
+**Source:** David's deck, Limitations; What does it mean to keep playing a lost position? Contact evidence is marked in the supplied deck's README as newer than the paper.

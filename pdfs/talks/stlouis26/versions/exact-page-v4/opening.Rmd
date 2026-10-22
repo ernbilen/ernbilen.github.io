@@ -1,0 +1,62 @@
+---
+title: "Nationalism in Online Games During War"
+subtitle: "⚔<br/>with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)"
+author: "Eren Bilen, Assistant Professor of Data Analytics"
+institute: "Dickinson College"
+date: "St. Louis, 2026"
+output:
+  xaringan::moon_reader:
+    css: ["libs/remark-css/default.css", "styles.css"]
+    lib_dir: libs
+    nature:
+      ratio: "4:3"
+      countIncrementalSlides: false
+---
+
+???
+
+**Cue:** Introduce the coauthors, then the question on the next slide.
+
+---
+name: motivation
+
+**When wars begin, do individuals change how they treat members of the opposing country in everyday encounters that have nothing to do with the war?**
+
+--
+
+- Very hard to study empirically: few observations of interactions between members of societies at war
+
+--
+
+  - Russia excluded from the 2022 World Cup in Qatar
+  - Fencing: Ihor Reizlin withdrew rather than face a Russian opponent (2023)
+
+--
+
+<br/>
+
+- Chess makes it possible to study this question
+
+--
+
+  - Chess.com operates 24/7
+  - Automated matching by rating and availability
+  - The opponent's country flag is displayed
+
+???
+
+**Cue:** Limited opportunities to observe encounters; chess records them at scale.
+
+**Say:** It is hard to study this question empirically because repeated interactions between members of societies at war are rarely observed. Even in sport, institutional exclusions and withdrawals can prevent an encounter from taking place. Russia's suspension prevented its participation in the 2022 World Cup; in fencing, Ihor Reizlin withdrew from a 2023 bout against Vadim Anokhin in line with Ukraine's policy at the time. These are examples of missing encounters, not measurements of ordinary people's motives. Chess.com records encounters around the clock, pairs available players by rating and time control, and displays the opponent's flag.
+
+**Matching:** Pairing is automated within rating, time-control, availability and fair-play constraints. It is not unconditional random assignment; David describes pairing by rating and availability.
+
+**Next:** "Here is exactly what a player sees."
+
+**Sources:** Fordham 2025 slides, Observational data; David's deck, Why chess? and What a player sees.
+
+FIFA suspension: https://inside.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/fifa-uefa-suspend-russian-clubs-and-national-teams-from-all-competitions
+
+Fencing withdrawal: https://www.ansa.it/sito/notizie/sport/altrisport/2023/07/26/mondiali-scherma-ucraino-rifiuta-lassalto-contro-atleta-russo_2ed28c65-a101-4ce1-972f-f89e52d61174.html
+
+Matching: https://support.chess.com/en/articles/8639319-how-does-matchmaking-work-in-live-chess

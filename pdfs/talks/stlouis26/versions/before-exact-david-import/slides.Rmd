@@ -1,0 +1,433 @@
+---
+title: "Refusing to concede?<br/>War and everyday rivalry online"
+subtitle: "⚔<br/>with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)"
+author: "Eren Bilen, Assistant Professor of Data Analytics"
+institute: "Dickinson College"
+date: "St. Louis, 2026"
+output:
+  xaringan::moon_reader:
+    css: ["libs/remark-css/default.css", "styles.css"]
+    lib_dir: libs
+    nature:
+      ratio: "4:3"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+editor_options:
+  chunk_output_type: console
+---
+
+
+
+???
+
+**Time: 0:20 | Elapsed: 0:20**
+
+**Cue:** The decision to concede, in an everyday encounter.
+
+**Say:** This is joint work with Nino, Robizon, and David. The question is whether war changes people's willingness to concede to someone displaying the opposing country's flag, in a contest far removed from the fighting.
+
+**Next:** "The platform makes the opponent's displayed country visible."
+
+**Source:** David's deck, Concession and the cost of continuing; Research questions.
+
+---
+name: player-view
+
+<br/>
+
+<img src="assets/opponent-flags.png" alt="An anonymized live-game screenshot from David's deck, with ratings and country flags beside the players' names." style="display:block;margin:0 auto;height:480px;width:auto;max-width:60%;" />
+
+.center[.caption[The opponent's flag is visible before the first move and throughout play]]
+
+???
+
+**Time: 0:25 | Elapsed: 0:45**
+
+**Cue:** The flag is part of the encounter.
+
+**Say:** A player sees the opponent's rating and flag before the first move and throughout the game. The platform pairs players by rating and availability, and players cannot filter opponents by country. This screenshot illustrates the interface; it is not evidence from a particular conflict sample. A displayed flag is a proxy for affiliation, not necessarily citizenship.
+
+**Next:** "Our focus is the moment when one player decides whether to concede."
+
+**Source:** David's deck, What a player sees; old_draft_fig1a_game_screenshot.png. Screenshot from the supplied deck, May 2024 vintage; usernames and avatars removed.
+
+---
+name: concession
+
+# Resignation: a unilateral concession
+
+- Resignation ends the game immediately as a loss for the resigner
+
+--
+
+- In a clearly lost position, resigning is normal chess etiquette
+  - Acknowledging the opponent's win
+
+--
+
+- Continuing uses time and effort, often with little prospect of reward
+
+--
+
+- Does war change the willingness to make that concession?
+
+???
+
+**Time: 0:50 | Elapsed: 1:35**
+
+**Cue:** Resignation is an ending the player chooses.
+
+**Say:** The decision of interest is concession. Resignation accepts a loss and ends the encounter immediately. In a clearly lost position, it can also be a courtesy to the opponent. Continuing uses the player's time and effort, often with little prospect of changing the outcome. David's framing is that this is a simple setting in which we can observe a unilateral concession, directed at one identifiable opponent. We ask whether willingness to concede changes when that opponent displays the other side's flag.
+
+**Next:** "More precisely, does the same player concede differently once the countries are at war?"
+
+**Source:** David's deck, Concession and the cost of continuing; Resignation: a unilateral concession.
+
+---
+name: questions
+
+# Research questions
+
+**Does the same player concede differently to opponents displaying the opposing country's flag once their countries are at war?**
+
+--
+
+- Which aspects of play change?
+  - Concession, persistence, move quality, opening choices
+
+--
+
+- Does the response appear in every conflict?
+
+--
+
+- The direction is not obvious
+  - Leave an unpleasant encounter sooner, or refuse to acknowledge a loss?
+
+???
+
+**Time: 0:50 | Elapsed: 2:25**
+
+**Cue:** The precise question concerns concession toward a particular opponent.
+
+**Say:** We compare the same player's behavior toward opponents displaying the opposing country's flag, before and after war begins. We ask which margins change: resignation, persistence, move quality, and openings. We also ask whether this happens in every conflict. The direction is not obvious. A player might leave an unpleasant losing game sooner, or keep fighting because conceding to this opponent feels worse. We measure behavior rather than assume a motive.
+
+**Next:** "We study three conflicts."
+
+**Source:** David's deck, Research questions; Predictions around participation and performance are not obvious.
+
+---
+name: conflicts
+
+# Conflicts
+
+- Armenia–Azerbaijan: **September 2020**
+
+- Russia–Ukraine: **February 2022**
+
+- Israel–Palestine: **October 2023**
+
+???
+
+**Time: 0:30 | Elapsed: 2:55**
+
+**Cue:** Three wars, with separate onset dates.
+
+**Say:** The conflicts are Armenia–Azerbaijan in September 2020, Russia–Ukraine in February 2022, and Israel–Palestine in October 2023. We use the exact onset date for each conflict. The main window is eight months before to eleven months after onset. We examine the conflicts separately as well as together; the result need not be the same in each.
+
+**Next:** "We use two samples for different parts of the question."
+
+**Source:** David's deck, Three conflicts; Backup: the three conflicts and the analysis samples.
+
+---
+name: samples
+
+# Two samples
+
+- **Raw game records:** 32.4 million games, 33,687 accounts
+  - How games ended and how long they lasted
+
+--
+
+- **Engine-analyzed:** about 1.4 million games
+  - Continuation after a position becomes lost
+  - Move quality and opening choices
+
+--
+
+- Separately drawn samples, with different eligibility and sampling rules
+  - Corroboration under a different sample construction
+
+???
+
+**Time: 0:45 | Elapsed: 3:40**
+
+**Cue:** Scale in the raw records; positions and quality in the engine sample.
+
+**Say:** The raw records cover 32.4 million games from 33,687 accounts, with no engine-based restriction. They establish the behavioral result at scale. A separately drawn engine-analyzed sample of about 1.4 million games lets us condition on the objective position and examine move quality and openings. The two samples use different eligibility and comparison-game sampling rules; neither is a subset of the other. Their convergence is corroboration under different sample constructions, not proof that the samples are statistically independent.
+
+**Next:** "The key contrast is within a player, between two kinds of opponent."
+
+**Source:** David's deck, The data: 32.4 million games by 33,687 accounts; Two samples used in this paper.
+
+---
+name: comparison
+
+# Same player, before and after
+
+- The same player's games against:
+  - Opponents displaying the opposing country's flag
+  - All other opponents
+
+--
+
+- How much does that gap change after the war begins?
+  - Account for both ratings and calendar changes within each conflict
+
+--
+
+- Assumption: without the onset, the gap would have followed a similar path
+
+???
+
+**Time: 1:00 | Elapsed: 4:40**
+
+**Cue:** The change in the opposing-versus-other gap.
+
+**Say:** For a Ukrainian player, for example, we compare games against Russian-flag opponents with their games against everyone else. We estimate how much that gap changes after onset, within the same player and within calendar months of each conflict. Stable player differences and common conflict-specific calendar shocks are absorbed, and both ratings are controlled. The assumption is that the gap would have followed a similar path without onset. This is a within-player comparison, not a claim that every meeting is randomly assigned. Availability, opponent composition, and unobserved pre-game refusals remain limitations.
+
+**Next:** "The pooled result is that players became less willing to concede."
+
+**Source:** David's deck, Estimation: the same player, two kinds of opponent, before and after; Estimation: the specification; Limitations.
+
+---
+name: resignation
+
+# Results: Concession
+
+<br/>
+
+<img src="assets/scale_lost_games.png" alt="Less concession after onset: −1.46 percentage points with each player weighted equally (6.8% of the pre-war rate); −0.46 points with each game weighted equally (2.1%). Illustration uses the pre-war loss rate." width="100%" style="display:block;margin:0 auto;" />
+
+.center[.caption[**Figure:** Less concession after onset: −1.46 percentage points with each player weighted equally (6.8% of the pre-war rate); −0.46 points with each game weighted equally (2.1%). Illustration uses the pre-war loss rate.]]
+
+???
+
+**Time: 1:30 | Elapsed: 6:10**
+
+**Cue:** A modest average decline; explain points versus percent, then the exception.
+
+**Say:** Players became less likely to resign against an opponent displaying the other side's flag, relative to the comparison games. When each player gets equal weight, the pooled estimate is a decline of 1.46 percentage points. That is about 7 percent of the pre-war resignation rate, not seven percentage points. David's illustration makes the scale concrete: out of 1,000 such games before the war, about 460 were lost and 215 ended in resignation. The estimate amounts to roughly 15 fewer resignations, or about three fewer per 100 lost games using that pre-war loss rate. This is an illustration of the adjusted estimate, not a directly estimated effect conditional on losing. Weighting each game equally gives a smaller estimate, minus 0.46 points. The results also differ across conflicts: Ukraine–Russia and Israel–Palestine have negative estimates; Armenia–Azerbaijan has no detectable resignation change. The raw-record Israel–Palestine estimate is borderline at conventional significance levels (p = .053).
+
+**Next:** "If fewer games end in resignation, how do they end instead?"
+
+**Source:** David's deck, headline and scale frames; scale_lost_games.pdf; By conflict. Equal-player pooled estimate: SE 0.64 pp, p = .022. Equal-game estimate: SE 0.13 pp, p = .0005. See backup.html for weighting and conflict estimates.
+
+---
+name: endings
+
+# Results: Game endings
+
+<br/>
+
+<img src="assets/endings.png" alt="Game endings: fewer resignations, more checkmates and losses on time. Separate game-level analysis; each game counted once. Bars show 95% confidence intervals." width="95%" style="display:block;margin:0 auto;" />
+
+.center[.caption[**Figure:** Game endings: fewer resignations, more checkmates and losses on time. Separate game-level analysis; each game counted once. Bars show 95% confidence intervals.]]
+
+???
+
+**Time: 1:00 | Elapsed: 7:10**
+
+**Cue:** The route to the end changes.
+
+**Say:** In a separate game-level analysis, counting each game once, resignation endings fall by 1.50 points. Checkmates rise by 0.65 and losses on time by 0.80. Those increases nearly offset the decline in resignation. We do not detect a change in whether games are decisive or drawn. This is consistent with some games that would have ended in resignation continuing until mate or until a clock runs out. We do not observe the counterfactual ending of any individual game. The coefficients here come from a different analysis from the previous slide; their similarity does not make the samples or estimands identical.
+
+**Next:** "Next, we check whether players actually keep going in positions the engine classifies as lost."
+
+**Source:** David's deck, Where the missing concessions went: checkmate, or the clock; endings.pdf. The figure uses 1,747,107 physical games, each counted once.
+
+---
+name: lost-positions
+
+# Measuring continuation
+
+- A position counts as "lost" at the first Stockfish evaluation of **−3 pawns or worse** for that player
+
+--
+
+- Include every game that reaches that threshold
+  - Regardless of how the game eventually ends
+
+--
+
+- Measure:
+  - Half-moves played after reaching the threshold
+  - Continuing for more than six half-moves
+
+???
+
+**Time: 0:35 | Elapsed: 7:45**
+
+**Cue:** Define the position first; then measure continuation.
+
+**Say:** The engine identifies when a player's position first reaches minus three pawns or worse. We call that lost for the analysis, without claiming a human game is literally unwinnable. Every game reaching the threshold enters, regardless of its final result. We measure the additional half-moves and whether play continues beyond six half-moves. The risk set contains 1,115,113 player-game observations from 35,925 players.
+
+**Next:** "Players continued a little longer after reaching that threshold."
+
+**Source:** David's deck, Measuring continuation after a position is lost.
+
+---
+name: persistence
+
+# Results: Persistence
+
+<br/>
+
+<img src="assets/persistence_v3.png" alt="Continuation after reaching the lost-position threshold: +0.288 half-moves on average (+1.7%). More likely to continue beyond six half-moves. Bars show 95% confidence intervals." width="100%" style="display:block;margin:0 auto;" />
+
+.center[.caption[**Figure:** Continuation after reaching the lost-position threshold: +0.288 half-moves on average (+1.7%). More likely to continue beyond six half-moves. Bars show 95% confidence intervals.]]
+
+???
+
+**Time: 1:05 | Elapsed: 8:50**
+
+**Cue:** Engine-defined threshold; small average effect; avoid overstating what "lost" means.
+
+**Say:** Engine analysis lets us identify when a player first reaches an evaluation of minus three pawns or worse. We call that a lost position for this analysis; it does not mean a human game is literally unwinnable. We include every game that reaches the threshold, regardless of how it eventually ends. Against opposing-country opponents after onset, players continued about 0.29 extra half-moves on average: a small, 1.7 percent increase. They were also more likely to continue beyond six half-moves. A half-move is one move by one player. We do not detect more games entering the lost-position group, or a shift in the evaluation at which players resign. This supports a continuation response, while the size remains modest.
+
+**Next:** "Is that extra continuation accompanied by worse chess?"
+
+**Source:** David's deck, Measuring continuation after a position is lost; persistence and checks frames; persistence_v3.pdf. Risk set: 1,115,113 player-game observations, 35,925 players. Extra play: +0.288 half-moves, SE 0.061, p < .0001. Beyond six half-moves: +0.63 pp, p = .0011.
+
+---
+name: quality
+
+# Results: Move quality
+
+<br/>
+
+<img src="assets/quality_main.png" alt="Move quality: engine-evaluated error fell slightly; no detectable change in performance relative to ratings." width="95%" style="display:block;margin:0 auto;" />
+
+.center[.caption[**Figure:** Move quality: engine-evaluated error fell slightly; no detectable change in performance relative to ratings.]]
+
+???
+
+**Time: 0:30 | Elapsed: 9:20**
+
+**Cue:** A small improvement in measured accuracy, not a big practical change.
+
+**Say:** Average engine-evaluated error actually falls slightly, by 0.229 centipawns per move. It is a small change. Performance relative to ratings does not detectably change. So the extra continuation is not accompanied by deteriorating play.
+
+**Next:** "We also see a change in opening choices."
+
+**Source:** David's deck, Move quality; quality_main.pdf. Error SE 0.104, p = .027. Rating-adjusted performance p = .83.
+
+---
+name: openings
+
+# Results: Openings
+
+<br/>
+
+<img src="assets/openings_main.png" alt="Opening choices: more departures from the player's own pre-war repertoire, especially in Armenia–Azerbaijan. Higher index = less familiar openings." width="95%" style="display:block;margin:0 auto;" />
+
+.center[.caption[**Figure:** Opening choices: more departures from the player's own pre-war repertoire, especially in Armenia–Azerbaijan. Higher index = less familiar openings.]]
+
+???
+
+**Time: 0:40 | Elapsed: 10:00**
+
+**Cue:** Less familiar openings; this does not establish more aggressive openings.
+
+**Say:** Players departed more from their own pre-war repertoires. The largest change is in Armenia–Azerbaijan, where there is no detectable resignation change. This index measures how familiar an opening is for that player. It does not measure aggressiveness, and we should not claim a clear increase in aggressive openings.
+
+**Next:** "How should we interpret this reluctance to concede?"
+
+**Source:** David's deck, A different margin: departures from habitual openings; openings_main.pdf. Pooled index +0.087, p < .0001.
+
+---
+name: interpretation
+
+# What does playing on mean?
+
+- **Withholding the acknowledgment of victory**
+  - Resignation explicitly accepts the opponent's win
+
+--
+
+- **Higher stakes under rivalry**
+  - Losing to this opponent may matter more
+
+--
+
+- **Wartime suspension of courtesies**
+  - A player may withhold the courtesy of resigning
+
+--
+
+- These are possible explanations, not measured motives
+  - Nationalism and identity salience were not measured
+
+???
+
+**Time: 0:55 | Elapsed: 10:55**
+
+**Cue:** Three interpretations fit the behavior; we do not choose between them.
+
+**Say:** David presents three possible interpretations. Players may withhold an acknowledgment of the opponent's victory; losing to this opponent may carry higher stakes; or wartime rivalry may suspend ordinary courtesies. All are compatible with less resignation and extra continuation without worse move quality. The continuation has a time-and-effort cost, but the average increase is modest. We cannot infer the motive: nationalism and identity salience were not directly measured, and flags need not be citizenship.
+
+**Next:** "The conclusion is about behavior and the route to an ending."
+
+**Source:** David's deck, What does it mean to keep playing a lost position?; Limitations.
+
+---
+name: conclusion
+
+# Conclusion
+
+- After war began, players became less willing to concede to the other side
+  - About **7% of the pre-war resignation rate per player**, **2% per game**
+
+--
+
+- Fewer concessions became checkmates and losses on time
+  - Players continued longer in lost positions, without playing worse
+
+--
+
+- The response differs across conflicts
+  - No detectable resignation change in Armenia–Azerbaijan
+  - A change in opening repertoires instead
+
+???
+
+**Time: 0:45 | Elapsed: 11:40**
+
+**Cue:** A change in concession, continuation, and the route to the ending.
+
+**Say:** The central result is a reluctance to concede to the opposing side in an everyday encounter far removed from the war. The pooled estimate is about seven percent of the pre-war resignation rate when players are weighted equally, and about two percent when games are weighted equally. Missing concessions show up as more checkmates and losses on time; engine analysis shows a small increase in continuation in lost positions without deteriorating play. It is not uniform across conflicts: Armenia–Azerbaijan shows no detectable resignation change and a larger opening-repertoire response. The records establish behavior, not a single psychological explanation.
+
+**Next:** "Thank you. I would welcome your thoughts on the concession decision."
+
+**Source:** David's deck, Conclusion; By conflict; A different margin: departures from habitual openings.
+
+---
+name: thanks
+class: center, middle
+
+# Thanks!
+
+For questions and comments, you can reach me at
+
+[**bilene@dickinson.edu**](mailto:bilene@dickinson.edu)
+
+???
+
+**Time: 0:20 | Elapsed: 12:00**
+
+**Cue:** Stop here and invite questions.
+
+**Say:** Thank you. I would welcome your thoughts, especially on how chess players interpret the decision to resign.
+
+**Next:** Questions. End of the main talk. Additional figures and technical answers are in backup.html, separate from this sequence.

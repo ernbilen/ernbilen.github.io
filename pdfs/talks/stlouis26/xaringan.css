@@ -1,0 +1,124 @@
+:root { --slide-text-size: 18px; --table-text-size: 15px; }
+.remark-slide-content { font-size: var(--slide-text-size); }
+/* Native xaringan slides, using the original EEA fonts and title template. */
+/* A square logo inside the existing right margin on every slide. */
+.remark-slide-content { position: relative; }
+.remark-slide-content::after {
+  content: "";
+  background: url('assets/dickinson-logo.png') center / contain no-repeat;
+  position: absolute; top: 12px; right: 12px;
+  width: 64px; height: 64px;
+  pointer-events: none; z-index: 5;
+}
+.remark-slide-content.native-slide, .remark-slide-content.opening-slide { padding: 65px 80px 70px; }
+.native-slide { font-size: var(--slide-text-size); line-height: 1.23; }
+.native-slide h1 { font-size: 38px; line-height: 1.08; margin: 0 0 18px; }
+.native-slide h2 { font-size: 30px; margin: 14px 0 8px; }
+.native-slide p { margin: 10px 0; }
+.native-slide li { margin: 7px 0; }
+.native-slide li p { margin: 0; }
+.native-slide ul, .native-slide ol { padding-left: 1.4em; margin: 10px 0; }
+.native-slide blockquote { margin: 14px 0 18px; }
+.native-slide img { display: block; margin: 8px auto; max-height: 260px; max-width: 100%; object-fit: contain; }
+.with-figure { font-size: var(--slide-text-size); }
+.with-figure li { margin: 6px 0; }
+.with-figure img { max-height: 250px; }
+.native-slide table { width: 100%; border-collapse: collapse; font-size: var(--table-text-size); margin: 12px auto 18px; }
+.native-slide th, .native-slide td { padding: 7px 8px; vertical-align: top; }
+.native-slide th { font-weight: 700; }
+.native-slide table p { margin: 0; }
+.native-slide .slide-links { position: absolute; left: 80px; right: 80px; bottom: 19px; font-size: 12px; line-height: 1.25; text-align: right; }
+.native-slide .slide-links p { margin: 0; }
+.native-slide .slide-links a { color: #1f5fad; }
+.native-slide .slide-links a + a { margin-left: 12px; }
+.native-slide .source-note { font-size: var(--slide-text-size); color: #666; margin-top: 8px; }
+.native-slide .source-note p { margin: 0; }
+.native-slide .remark-slide-number { right: 20px; bottom: 7px; font-size: var(--slide-text-size); }
+.appendix-slide { font-size: var(--slide-text-size); line-height: 1.2; }
+.appendix-slide h1 { font-size: 34px; }
+.appendix-slide li { margin: 5px 0; }
+.appendix-slide.with-figure img { max-height: 290px; }
+.table-slide { font-size: var(--slide-text-size); }
+.table-slide table { font-size: var(--table-text-size); }
+.faq-slide { font-size: var(--slide-text-size); line-height: 1.2; }
+.faq-slide h1 { font-size: 32px; }
+.faq-slide p { margin: 10px 0; }
+.faq-slide dl { margin: 8px 0; }
+.faq-slide dt { font-weight: bold; margin-top: 8px; }
+.faq-slide dd { margin-left: 22px; }
+.dense-slide { font-size: var(--slide-text-size); }
+.dense-slide.with-figure img { max-height: 200px; }
+.screenshots-slide .screenshots { display: flex; justify-content: center; align-items: flex-start; gap: 48px; height: 390px; }
+.screenshots-slide .screenshots figure { width: 300px; margin: 0; text-align: center; }
+.screenshots-slide .screenshots img { height: 340px; max-height: 340px; width: auto; max-width: 100%; margin: 0 auto; }
+.screenshots-slide figcaption { margin-top: 8px; font-size: var(--slide-text-size); line-height: 1.25; }
+.screenshots-slide .player-view-notes p { margin: 8px 0; font-size: var(--slide-text-size); line-height: 1.2; }
+.screenshots-slide p.source-note { margin-top: 12px; }
+.live-search-slide .search-figure { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 520px; }
+.native-slide.live-search-slide img { height: 450px; max-height: 450px; width: auto; max-width: 100%; margin: 0; }
+.live-search-slide p.search-caption { margin: 0; font-size: var(--slide-text-size); line-height: 1.2; text-align: center; }
+.comparison-table { text-align: center; }
+.comparison-table .treated { background: #c9def7; }
+.comparison-table th { text-align: center; }
+.figure-row { display: flex; gap: 20px; justify-content: center; align-items: center; }
+.figure-row p { display: contents; }
+.figure-row img { max-width: 48%; max-height: 250px!important; }
+.index-slide { font-size: var(--slide-text-size); line-height: 1.12; }
+.index-slide h1 { font-size: 32px; }
+.index-slide li { margin: 3px 0; }
+.index-slide p { margin: 8px 0; }
+.index-slide ul, .index-slide ol { margin: 8px 0; }
+.native-slide math { font-size: 1em; }
+.native-slide math[display="block"] { font-size: 1em; margin: 16px 0; overflow-wrap: anywhere; }
+@media print {
+  @page { size: 908px 681px; margin: 0; }
+  .remark-slide-scaler { box-shadow: none; }
+}
+
+/* David's table layout with the EEA slide text font. */
+.remark-slide-content.native-slide table {
+  font-family: inherit;
+  font-size: var(--table-text-size);
+  line-height: 1.25;
+  border-top: 1.3px solid #222;
+  border-bottom: 1.3px solid #222;
+}
+.remark-slide-content.native-slide table thead,
+.remark-slide-content.native-slide table tbody,
+.remark-slide-content.native-slide table tfoot,
+.remark-slide-content.native-slide table tr:nth-child(n) { background: transparent; }
+.remark-slide-content.native-slide table th,
+.remark-slide-content.native-slide table td { border: 0; background: transparent; }
+.remark-slide-content.native-slide table thead { border-bottom: 1px solid #222; }
+.remark-slide-content.native-slide table.comparison-table .treated { background: #c9def7; }
+.remark-slide-content.native-slide#slide-bk-robust table th,
+.remark-slide-content.native-slide#slide-bk-robust table td { padding-top: 5px; padding-bottom: 5px; }
+.remark-slide-content.native-slide.samples-table-slide table {
+  table-layout: fixed;
+  font-size: var(--table-text-size);
+  line-height: 1.25;
+  border-top: 0;
+  border-bottom: 0;
+}
+.remark-slide-content.native-slide.samples-table-slide th,
+.remark-slide-content.native-slide.samples-table-slide td { width: 50%; padding: 8px 0; }
+.remark-slide-content.native-slide.samples-table-slide th { font-size: 1em; }
+.remark-slide-content.native-slide.samples-table-slide th:first-child,
+.remark-slide-content.native-slide.samples-table-slide td:first-child { padding-right: 20px; }
+.remark-slide-content.native-slide.samples-table-slide th:last-child,
+.remark-slide-content.native-slide.samples-table-slide td:last-child { padding-left: 20px; }
+
+/* Fit the longer backup pages at the same 18px body size. */
+#slide-backup-index2 { padding-bottom: 55px; }
+#slide-backup-index2 li { margin: 1px 0; }
+#slide-backup-index2 ul { margin-top: 6px; margin-bottom: 6px; }
+#slide-anyone li { margin: 4px 0; }
+#slide-anyone p { margin: 8px 0; }
+#slide-anyone img { max-height: 250px; }
+#slide-faq-glossary dt { display: inline; margin: 0 6px 0 0; }
+#slide-faq-glossary dd { display: inline; margin: 0; }
+#slide-faq-glossary dd p { display: inline; margin: 0; }
+#slide-faq-glossary dd::after { content: ""; display: block; height: 10px; }
+
+/* Keep the research-question quote full width across pause reveals. */
+.opening-slide blockquote { margin-left: 0; margin-right: 0; }

@@ -1,0 +1,1244 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>St. Louis 2026</title><link rel="stylesheet" href="libs/remark-css/default.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="source-pages.css"></head><body><textarea id="source">class: center, middle, inverse, title-slide
+name: p-001
+
+.title[
+# Nationalism in Online Games During War
+]
+.subtitle[
+## ⚔&lt;br/&gt;with Nino Doghonadze (Uber), Robizon Khubulashvili (U of San Francisco), David Smerdon (U of Queensland)
+]
+.author[
+### Eren Bilen, Assistant Professor of Data Analytics
+]
+.institute[
+### Dickinson College
+]
+.date[
+### St. Louis, 2026
+]
+
+???
+
+**Cue:** Introduce the coauthors, then the question on the next slide.
+
+---
+name: p-002
+
+**When wars begin, do individuals change how they treat members of the opposing country in everyday encounters that have nothing to do with the war?**
+
+???
+
+**Cue:** Limited opportunities to observe encounters; chess records them at scale.
+
+**Say:** It is hard to study this question empirically because repeated interactions between members of societies at war are rarely observed. Even in sport, institutional exclusions and withdrawals can prevent an encounter from taking place. Russia's suspension prevented its participation in the 2022 World Cup; in fencing, Ihor Reizlin withdrew from a 2023 bout against Vadim Anokhin in line with Ukraine's policy at the time. These are examples of missing encounters, not measurements of ordinary people's motives. Chess.com records encounters around the clock, pairs available players by rating and time control, and displays the opponent's flag.
+
+**Matching:** Pairing is automated within rating, time-control, availability and fair-play constraints. It is not unconditional random assignment; David describes pairing by rating and availability.
+
+**Next:** "Here is exactly what a player sees."
+
+**Sources:** Fordham 2025 slides, Observational data; David's deck, Why chess? and What a player sees.
+
+FIFA suspension: https://inside.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/fifa-uefa-suspend-russian-clubs-and-national-teams-from-all-competitions
+
+Fencing withdrawal: https://www.ansa.it/sito/notizie/sport/altrisport/2023/07/26/mondiali-scherma-ucraino-rifiuta-lassalto-contro-atleta-russo_2ed28c65-a101-4ce1-972f-f89e52d61174.html
+
+Matching: https://support.chess.com/en/articles/8639319-how-does-matchmaking-work-in-live-chess
+
+--
+- Very hard to study empirically: few observations of interactions between members of societies at war
+
+--
+  - Russia excluded from the 2022 World Cup in Qatar
+  - Fencing: Ihor Reizlin withdrew rather than face a Russian opponent (2023)
+
+--
+&lt;br/&gt;
+
+- Chess makes it possible to study this question
+
+--
+  - Chess.com operates 24/7
+  - Automated matching by rating and availability
+  - The opponent's country flag is displayed
+
+
+---
+name: p-003
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-03.png" alt="What a player sees" /&gt;&lt;/div&gt;
+
+???
+
+What a player sees
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 4.
+
+---
+name: p-004
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-04.png" alt="What a player sees" /&gt;&lt;/div&gt;
+
+???
+
+What a player sees
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 5.
+
+---
+name: p-005
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-05.png" alt="Research questions" /&gt;&lt;/div&gt;
+
+???
+
+Research questions
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 7.
+
+---
+name: p-006
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-06.png" alt="Predictions around participation and performance are not obvious" /&gt;&lt;/div&gt;
+
+???
+
+Predictions around participation and performance are not obvious
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 8.
+
+---
+name: p-007
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-07.png" alt="Three conflicts" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:41.121570%;top:82.532397%;width:30.632156%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-085" aria-label="Go to FAQ: why these three conflicts?" title="Go to FAQ: why these three conflicts?" style="left:74.521490%;top:82.532397%;width:20.698148%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Three conflicts
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 9.
+
+---
+name: p-008
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-08.png" alt="The data: 32.4 million games by 33,687 accounts" /&gt;&lt;a href="#p-052" aria-label="Go to Backup: the sampling frame and the probability-sample caveat" title="Go to Backup: the sampling frame and the probability-sample caveat" style="left:13.329276%;top:84.175166%;width:19.207220%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-038" aria-label="Go to Backup: hostile-country games and the comparison set" title="Go to Backup: hostile-country games and the comparison set" style="left:35.026006%;top:84.175166%;width:36.563678%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-080" aria-label="Go to FAQ: are flags citizenship?" title="Go to FAQ: are flags citizenship?" style="left:74.079194%;top:84.175166%;width:21.140443%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+The data: 32.4 million games by 33,687 accounts
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 10.
+
+---
+name: p-009
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-09.png" alt="Two samples used in this paper" /&gt;&lt;a href="#p-051" aria-label="Go to Backup: eligibility rules for the engine-analyzed sample" title="Go to Backup: eligibility rules for the engine-analyzed sample" style="left:46.588747%;top:90.998283%;width:18.423391%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-084" aria-label="Go to FAQ: why do the two samples count as independent corroboration?" title="Go to FAQ: why do the two samples count as independent corroboration?" style="left:67.501648%;top:90.998283%;width:27.717989%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Two samples used in this paper
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 11.
+
+---
+name: p-010
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-10.png" alt="The raw-record sample by conflict" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:39.614105%;top:90.998283%;width:29.344296%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-055" aria-label="Go to Backup: how Table 1 counts games, observations and accounts" title="Go to Backup: how Table 1 counts games, observations and accounts" style="left:71.447911%;top:90.998283%;width:23.771726%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+The raw-record sample by conflict
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 12.
+
+---
+name: p-011
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-11.png" alt="How often players meet the other side" /&gt;&lt;a href="#p-063" aria-label="Go to Backup: Ukraine–Russia, contact with the other side month by month" title="Go to Backup: Ukraine–Russia, contact with the other side month by month" style="left:11.759855%;top:90.998283%;width:32.792040%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-038" aria-label="Go to Backup: hostile-country games and the comparison set" title="Go to Backup: hostile-country games and the comparison set" style="left:47.319659%;top:90.998283%;width:36.563457%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-029" aria-label="Go to Limitations" title="Go to Limitations" style="left:86.650880%;top:90.998283%;width:8.568758%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+How often players meet the other side
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 13.
+
+---
+name: p-012
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-12.png" alt="Hostile-country games and other games before the war" /&gt;&lt;a href="#p-038" aria-label="Go to Backup: hostile-country games and the comparison set" title="Go to Backup: hostile-country games and the comparison set" style="left:73.215770%;top:86.029994%;width:22.003867%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Hostile-country games and other games before the war
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 14.
+
+---
+name: p-013
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-13.png" alt="Estimation: the same player, two kinds of opponent, before and after" /&gt;&lt;a href="#p-040" aria-label="Go to Backup: what the fixed effects absorb, and what survives" title="Go to Backup: what the fixed effects absorb, and what survives" style="left:14.756925%;top:88.854961%;width:29.771819%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-039" aria-label="Go to Backup: identification in words, and the platform facts" title="Go to Backup: identification in words, and the platform facts" style="left:47.296508%;top:88.854961%;width:24.470227%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-075" aria-label="Go to FAQ: why a linear probability model and not a logit?" title="Go to FAQ: why a linear probability model and not a logit?" style="left:74.534498%;top:88.854961%;width:20.685139%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Estimation: the same player, two kinds of opponent, before and after
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 15.
+
+---
+name: p-014
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-14.png" alt="Before onset: no pre-trend" /&gt;&lt;a href="#p-059" aria-label="Go to Backup: monthly event study, raw-record sample" title="Go to Backup: monthly event study, raw-record sample" style="left:24.095180%;top:89.977971%;width:19.652822%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-062" aria-label="Go to Backup: joint pre-onset tests by conflict" title="Go to Backup: joint pre-onset tests by conflict" style="left:46.515766%;top:89.977971%;width:20.341180%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-079" aria-label="Go to FAQ: why should the pre-onset estimates be zero?" title="Go to FAQ: why should the pre-onset estimates be zero?" style="left:69.624710%;top:89.977971%;width:25.594927%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Before onset: no pre-trend
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 17.
+
+---
+name: p-015
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-15.png" alt="After onset: negative in every bin" /&gt;&lt;a href="#p-061" aria-label="Go to Backup: three-month bins to month 17" title="Go to Backup: three-month bins to month 17" style="left:74.450273%;top:90.998283%;width:20.769365%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+After onset: negative in every bin
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 18.
+
+---
+name: p-016
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-16.png" alt="Players conceded less often to hostile-country opponents after war began" /&gt;&lt;a href="#p-076" aria-label="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" title="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" style="left:64.670164%;top:90.998283%;width:30.549474%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Players conceded less often to hostile-country opponents after war began
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 19.
+
+---
+name: p-017
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-17.png" alt="Players conceded less often to hostile-country opponents after war began" /&gt;&lt;a href="#p-076" aria-label="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" title="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" style="left:64.670164%;top:90.998283%;width:30.549474%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Players conceded less often to hostile-country opponents after war began
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 20.
+
+---
+name: p-018
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-18.png" alt="How big is that? Measured against the games a player loses" /&gt;&lt;a href="#p-076" aria-label="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" title="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" style="left:44.060872%;top:90.998283%;width:26.510386%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-022" aria-label="Go to Where the missing concessions went: checkmate, or the clock" title="Go to Where the missing concessions went: checkmate, or the clock" style="left:73.339022%;top:90.998283%;width:21.880616%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+How big is that? Measured against the games a player loses
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 21.
+
+---
+name: p-019
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-19.png" alt="By conflict" /&gt;&lt;a href="#p-042" aria-label="Go to Backup: per-conflict estimates in both samples" title="Go to Backup: per-conflict estimates in both samples" style="left:42.150579%;top:84.947750%;width:26.275127%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-071" aria-label="Go to Backup: leave-one-conflict-out" title="Go to Backup: leave-one-conflict-out" style="left:71.193470%;top:84.947750%;width:24.026167%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+By conflict
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 23.
+
+---
+name: p-020
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-20.png" alt="Armenia–Azerbaijan" /&gt;&lt;a href="#p-067" aria-label="Go to Backup: game length in Armenia–Azerbaijan" title="Go to Backup: game length in Armenia–Azerbaijan" style="left:49.832982%;top:70.063657%;width:26.605857%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-081" aria-label="Go to FAQ: why is Armenia–Azerbaijan null?" title="Go to FAQ: why is Armenia–Azerbaijan null?" style="left:79.206602%;top:70.063657%;width:16.013035%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Armenia–Azerbaijan
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 24.
+
+---
+name: p-021
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-21.png" alt="Consistency of results across samples" /&gt;&lt;a href="#p-042" aria-label="Go to Backup: per-conflict estimates in both samples" title="Go to Backup: per-conflict estimates in both samples" style="left:35.134265%;top:80.001803%;width:26.799884%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-084" aria-label="Go to FAQ: why do the two samples count as independent corroboration?" title="Go to FAQ: why do the two samples count as independent corroboration?" style="left:64.701914%;top:80.001803%;width:30.517724%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Consistency of results across samples
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 25.
+
+---
+name: p-022
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-22.png" alt="Where the missing concessions went: checkmate, or the clock" /&gt;&lt;a href="#p-043" aria-label="Go to Backup: all endings, draws, and game length" title="Go to Backup: all endings, draws, and game length" style="left:42.867600%;top:90.998283%;width:25.403986%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-058" aria-label="Go to Backup: game-level estimation" title="Go to Backup: game-level estimation" style="left:71.039350%;top:90.998283%;width:24.180287%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Where the missing concessions went: checkmate, or the clock
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 26.
+
+---
+name: p-023
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-23.png" alt="Measuring continuation after a position is lost" /&gt;&lt;a href="#p-089" aria-label="Go to FAQ: glossary" title="Go to FAQ: glossary" style="left:66.273099%;top:88.559020%;width:28.946539%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Measuring continuation after a position is lost
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 27.
+
+---
+name: p-024
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-24.png" alt="Players fought on longer in positions that were already lost" /&gt;&lt;a href="#p-044" aria-label="Go to Backup: all persistence measures" title="Go to Backup: all persistence measures" style="left:51.140906%;top:90.166119%;width:25.919042%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-064" aria-label="Go to Backup: persistence by conflict" title="Go to Backup: persistence by conflict" style="left:79.827712%;top:90.166119%;width:15.391925%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Players fought on longer in positions that were already lost
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 28.
+
+---
+name: p-025
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-25.png" alt="Robustness: the same games became lost, and players did not move their" /&gt;&lt;a href="#p-069" aria-label="Go to Backup: rating quartiles, concession and persistence" title="Go to Backup: rating quartiles, concession and persistence" style="left:55.223871%;top:90.998283%;width:14.286407%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-083" aria-label="Go to FAQ: could the effect be worse play rather than a choice?" title="Go to FAQ: could the effect be worse play rather than a choice?" style="left:72.278042%;top:90.998283%;width:22.941595%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Robustness: the same games became lost, and players did not move their
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 29.
+
+---
+name: p-026
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-26.png" alt="Move quality: do players play worse?" /&gt;&lt;a href="#p-045" aria-label="Go to Backup: three measures of play quality" title="Go to Backup: three measures of play quality" style="left:44.782744%;top:90.998283%;width:24.777364%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-065" aria-label="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" title="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" style="left:72.327872%;top:90.998283%;width:22.891765%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Move quality: do players play worse?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 30.
+
+---
+name: p-027
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-27.png" alt="A different margin: departures from habitual openings" /&gt;&lt;a href="#p-046" aria-label="Go to Backup: openings by colour, and without Armenia–Azerbaijan" title="Go to Backup: openings by colour, and without Armenia–Azerbaijan" style="left:40.153855%;top:90.998283%;width:37.776572%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-066" aria-label="Go to Backup: the repertoire-deviation index" title="Go to Backup: the repertoire-deviation index" style="left:80.698192%;top:90.998283%;width:14.521446%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+A different margin: departures from habitual openings
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 31.
+
+---
+name: p-028
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-28.png" alt="Sensitivity to analysis choices: specification curve" /&gt;&lt;a href="#p-047" aria-label="Go to Backup: the specification curve with the choice matrix" title="Go to Backup: the specification curve with the choice matrix" style="left:46.469905%;top:90.998283%;width:24.891576%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-057" aria-label="Go to Backup: robustness dimensions tested" title="Go to Backup: robustness dimensions tested" style="left:74.129245%;top:90.998283%;width:21.090393%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Sensitivity to analysis choices: specification curve
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 32.
+
+---
+name: p-029
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-29.png" alt="Limitations" /&gt;&lt;a href="#p-063" aria-label="Go to Backup: Ukraine–Russia, contact with the other side month by month" title="Go to Backup: Ukraine–Russia, contact with the other side month by month" style="left:11.330789%;top:90.135937%;width:21.158082%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-041" aria-label="Go to Backup: threats to identification" title="Go to Backup: threats to identification" style="left:34.978381%;top:90.135937%;width:17.145232%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-053" aria-label="Go to Backup: flag-stability audit (re-scrape, September 2024)" title="Go to Backup: flag-stability audit (re-scrape, September 2024)" style="left:54.613124%;top:90.135937%;width:14.717678%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-088" aria-label="Go to FAQ: could players simply have quit on seeing the flag?" title="Go to FAQ: could players simply have quit on seeing the flag?" style="left:71.820313%;top:90.135937%;width:23.399325%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Limitations
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 33.
+
+---
+name: p-030
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-30.png" alt="What does it mean to keep playing a lost position?" /&gt;&lt;/div&gt;
+
+???
+
+What does it mean to keep playing a lost position?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 34.
+
+---
+name: p-031
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-31.png" alt="Possible implications for business interactions" /&gt;&lt;a href="#p-087" aria-label="Go to FAQ: is there a structural model behind this?" title="Go to FAQ: is there a structural model behind this?" style="left:67.476954%;top:81.375285%;width:27.742684%;height:3.350214%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Possible implications for business interactions
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 35.
+
+---
+name: p-032
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-32.png" alt="Next steps" /&gt;&lt;a href="#p-073" aria-label="Go to Backup: Iran feasibility" title="Go to Backup: Iran feasibility" style="left:76.997771%;top:88.964714%;width:18.221867%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Next steps
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 36.
+
+---
+name: p-033
+class: source-page
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-33.png" alt="Conclusion" /&gt;&lt;/div&gt;
+
+???
+
+Conclusion
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 37.
+
+---
+name: p-034
+class: center, middle, backup-divider
+count: false
+
+# Backup slides
+
+[Backup index](#p-035)
+
+[FAQ](#p-074)
+
+???
+
+Additional source material.
+
+---
+name: p-035
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-35.png" alt="Backup slides (1 of 2): data, design, specification" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:6.459586%;top:17.872514%;width:24.959706%;height:4.255286%"&gt;&lt;/a&gt;&lt;a href="#p-038" aria-label="Go to Backup: hostile-country games and the comparison set" title="Go to Backup: hostile-country games and the comparison set" style="left:6.459586%;top:23.885026%;width:32.655338%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-051" aria-label="Go to Backup: eligibility rules for the engine-analyzed sample" title="Go to Backup: eligibility rules for the engine-analyzed sample" style="left:6.459586%;top:29.742707%;width:12.837372%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-052" aria-label="Go to Backup: the sampling frame and the probability-sample caveat" title="Go to Backup: the sampling frame and the probability-sample caveat" style="left:6.459586%;top:35.600389%;width:13.728797%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-053" aria-label="Go to Backup: flag-stability audit (re-scrape, September 2024)" title="Go to Backup: flag-stability audit (re-scrape, September 2024)" style="left:6.459586%;top:41.458070%;width:16.336709%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-054" aria-label="Go to Backup: what a displayed flag is, and is not" title="Go to Backup: what a displayed flag is, and is not" style="left:6.459586%;top:47.315752%;width:21.644695%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-055" aria-label="Go to Backup: how Table 1 counts games, observations and accounts" title="Go to Backup: how Table 1 counts games, observations and accounts" style="left:6.459586%;top:53.173433%;width:18.734718%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-056" aria-label="Go to Backup: the Ukraine–Russia 2014 robustness sample" title="Go to Backup: the Ukraine–Russia 2014 robustness sample" style="left:6.459586%;top:59.031115%;width:24.514103%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-039" aria-label="Go to Backup: identification in words, and the platform facts" title="Go to Backup: identification in words, and the platform facts" style="left:54.792820%;top:18.027344%;width:32.247879%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-040" aria-label="Go to Backup: what the fixed effects absorb, and what survives" title="Go to Backup: what the fixed effects absorb, and what survives" style="left:54.792820%;top:23.885026%;width:25.409278%;height:3.222038%"&gt;&lt;/a&gt;&lt;a href="#p-041" aria-label="Go to Backup: threats to identification" title="Go to Backup: threats to identification" style="left:54.792820%;top:29.742707%;width:21.026011%;height:3.221646%"&gt;&lt;/a&gt;&lt;a href="#p-057" aria-label="Go to Backup: robustness dimensions tested" title="Go to Backup: robustness dimensions tested" style="left:54.792820%;top:35.600389%;width:25.559429%;height:3.221646%"&gt;&lt;/a&gt;&lt;a href="#p-058" aria-label="Go to Backup: game-level estimation" title="Go to Backup: game-level estimation" style="left:54.792820%;top:41.458070%;width:19.129829%;height:3.221646%"&gt;&lt;/a&gt;&lt;a href="#p-049" aria-label="Go to Backup: what we know, conflict and parochialism" title="Go to Backup: what we know, conflict and parochialism" style="left:54.792820%;top:47.315752%;width:31.308608%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-050" aria-label="Go to Backup: what we know, markets, institutions, expression" title="Go to Backup: what we know, markets, institutions, expression" style="left:54.792820%;top:53.173433%;width:37.167148%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-036" aria-label="Go to Backup slides (2 of 2): results in full, dynamics, heterogeneity" title="Go to Backup slides (2 of 2): results in full, dynamics, heterogeneity" style="left:71.630915%;top:76.598280%;width:12.661424%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-074" aria-label="Go to FAQ" title="Go to FAQ" style="left:86.562244%;top:76.598280%;width:8.657393%;height:3.905252%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup slides (1 of 2): data, design, specification
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 38.
+
+---
+name: p-036
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-36.png" alt="Backup slides (2 of 2): results in full, dynamics, heterogeneity" /&gt;&lt;a href="#p-042" aria-label="Go to Backup: per-conflict estimates in both samples" title="Go to Backup: per-conflict estimates in both samples" style="left:6.459586%;top:18.027344%;width:31.129794%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-071" aria-label="Go to Backup: leave-one-conflict-out" title="Go to Backup: leave-one-conflict-out" style="left:6.459586%;top:23.885026%;width:19.244702%;height:3.222038%"&gt;&lt;/a&gt;&lt;a href="#p-043" aria-label="Go to Backup: all endings, draws, and game length" title="Go to Backup: all endings, draws, and game length" style="left:6.459586%;top:29.742707%;width:19.036122%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-044" aria-label="Go to Backup: all persistence measures" title="Go to Backup: all persistence measures" style="left:6.459586%;top:35.600389%;width:21.057540%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-064" aria-label="Go to Backup: persistence by conflict" title="Go to Backup: persistence by conflict" style="left:6.459586%;top:41.458070%;width:19.278437%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-045" aria-label="Go to Backup: three measures of play quality" title="Go to Backup: three measures of play quality" style="left:6.459586%;top:47.315752%;width:20.088503%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-065" aria-label="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" title="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" style="left:6.459586%;top:53.173433%;width:27.921498%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-046" aria-label="Go to Backup: openings by colour, and without Armenia–Azerbaijan" title="Go to Backup: openings by colour, and without Armenia–Azerbaijan" style="left:6.459586%;top:59.031115%;width:16.775918%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-066" aria-label="Go to Backup: the repertoire-deviation index" title="Go to Backup: the repertoire-deviation index" style="left:6.459586%;top:64.888797%;width:17.193078%;height:3.221646%"&gt;&lt;/a&gt;&lt;a href="#p-067" aria-label="Go to Backup: game length in Armenia–Azerbaijan" title="Go to Backup: game length in Armenia–Azerbaijan" style="left:6.459586%;top:70.746478%;width:31.101571%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-047" aria-label="Go to Backup: the specification curve with the choice matrix" title="Go to Backup: the specification curve with the choice matrix" style="left:6.459586%;top:76.604160%;width:26.832075%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-059" aria-label="Go to Backup: monthly event study, raw-record sample" title="Go to Backup: monthly event study, raw-record sample" style="left:54.792820%;top:18.027344%;width:19.144381%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-061" aria-label="Go to Backup: three-month bins to month 17" title="Go to Backup: three-month bins to month 17" style="left:54.792820%;top:23.885026%;width:15.384870%;height:3.222038%"&gt;&lt;/a&gt;&lt;a href="#p-062" aria-label="Go to Backup: joint pre-onset tests by conflict" title="Go to Backup: joint pre-onset tests by conflict" style="left:54.792820%;top:29.742707%;width:23.116441%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-063" aria-label="Go to Backup: Ukraine–Russia, contact with the other side month by month" title="Go to Backup: Ukraine–Russia, contact with the other side month by month" style="left:54.792820%;top:35.600389%;width:29.811727%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-048" aria-label="Go to Backup: is anyone driving it?" title="Go to Backup: is anyone driving it?" style="left:54.792820%;top:47.315752%;width:17.586205%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-068" aria-label="Go to Backup: dispersion of player-level effects" title="Go to Backup: dispersion of player-level effects" style="left:54.792820%;top:53.173433%;width:27.602454%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-069" aria-label="Go to Backup: rating quartiles, concession and persistence" title="Go to Backup: rating quartiles, concession and persistence" style="left:54.792820%;top:59.031115%;width:13.792298%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-070" aria-label="Go to Backup: activity quartiles and the pooled trend test" title="Go to Backup: activity quartiles and the pooled trend test" style="left:54.792820%;top:64.888797%;width:14.674022%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-072" aria-label="Go to Backup: ethics and data governance" title="Go to Backup: ethics and data governance" style="left:54.792820%;top:70.746478%;width:23.899829%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-073" aria-label="Go to Backup: Iran feasibility" title="Go to Backup: Iran feasibility" style="left:54.792820%;top:76.604160%;width:12.286817%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-035" aria-label="Go to Backup slides (1 of 2): data, design, specification" title="Go to Backup slides (1 of 2): data, design, specification" style="left:71.630915%;top:85.384802%;width:12.661424%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-074" aria-label="Go to FAQ" title="Go to FAQ" style="left:86.562244%;top:85.384802%;width:8.657393%;height:3.905252%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup slides (2 of 2): results in full, dynamics, heterogeneity
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 39.
+
+---
+name: p-037
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-37.png" alt="Backup: the three conflicts and the analysis samples" /&gt;&lt;a href="#p-055" aria-label="Go to Backup: how Table 1 counts games, observations and accounts" title="Go to Backup: how Table 1 counts games, observations and accounts" style="left:32.822687%;top:88.896119%;width:23.771726%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-056" aria-label="Go to Backup: the Ukraine–Russia 2014 robustness sample" title="Go to Backup: the Ukraine–Russia 2014 robustness sample" style="left:58.864099%;top:88.896119%;width:20.101512%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-008" aria-label="Go to The data: 32.4 million games by 33,687 accounts" title="Go to The data: 32.4 million games by 33,687 accounts" style="left:81.235296%;top:88.896119%;width:13.984341%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: the three conflicts and the analysis samples
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 40.
+
+---
+name: p-038
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-38.png" alt="Backup: hostile-country games and the comparison set" /&gt;&lt;a href="#p-057" aria-label="Go to Backup: robustness dimensions tested" title="Go to Backup: robustness dimensions tested" style="left:46.787846%;top:90.409536%;width:24.523584%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-080" aria-label="Go to FAQ: are flags citizenship?" title="Go to FAQ: are flags citizenship?" style="left:74.079194%;top:90.409536%;width:21.140443%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: hostile-country games and the comparison set
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 41.
+
+---
+name: p-039
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-39.png" alt="Backup: identification in words, and the platform facts" /&gt;&lt;a href="#p-078" aria-label="Go to FAQ: what exactly is exogenous here, and what is not?" title="Go to FAQ: what exactly is exogenous here, and what is not?" style="left:8.864430%;top:86.311824%;width:24.011395%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-086" aria-label="Go to FAQ: can players avoid hostile-country opponents?" title="Go to FAQ: can players avoid hostile-country opponents?" style="left:35.609413%;top:86.311824%;width:33.477311%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-088" aria-label="Go to FAQ: could players simply have quit on seeing the flag?" title="Go to FAQ: could players simply have quit on seeing the flag?" style="left:71.820313%;top:86.311824%;width:23.399325%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-013" aria-label="Go to Estimation: the same player, two kinds of opponent, before and after" title="Go to Estimation: the same player, two kinds of opponent, before and after" style="left:77.986211%;top:90.998283%;width:17.233427%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: identification in words, and the platform facts
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 42.
+
+---
+name: p-040
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-40.png" alt="Backup: what the fixed effects absorb, and what survives" /&gt;&lt;a href="#p-013" aria-label="Go to Estimation: the same player, two kinds of opponent, before and after" title="Go to Estimation: the same player, two kinds of opponent, before and after" style="left:77.986211%;top:83.373968%;width:17.233427%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: what the fixed effects absorb, and what survives
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 43.
+
+---
+name: p-041
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-41.png" alt="Backup: threats to identification" /&gt;&lt;a href="#p-053" aria-label="Go to Backup: flag-stability audit (re-scrape, September 2024)" title="Go to Backup: flag-stability audit (re-scrape, September 2024)" style="left:23.721235%;top:84.583212%;width:21.410318%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-054" aria-label="Go to Backup: what a displayed flag is, and is not" title="Go to Backup: what a displayed flag is, and is not" style="left:47.181634%;top:84.583212%;width:26.311728%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-029" aria-label="Go to Limitations" title="Go to Limitations" style="left:75.543664%;top:84.583212%;width:19.675973%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: threats to identification
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 44.
+
+---
+name: p-042
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-42.png" alt="Backup: per-conflict estimates in both samples" /&gt;&lt;a href="#p-071" aria-label="Go to Backup: leave-one-conflict-out" title="Go to Backup: leave-one-conflict-out" style="left:52.664687%;top:90.998283%;width:24.026167%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-021" aria-label="Go to Consistency of results across samples" title="Go to Consistency of results across samples" style="left:79.458618%;top:90.998283%;width:15.761019%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: per-conflict estimates in both samples
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 45.
+
+---
+name: p-043
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-43.png" alt="Backup: all endings, draws, and game length" /&gt;&lt;a href="#p-058" aria-label="Go to Backup: game-level estimation" title="Go to Backup: game-level estimation" style="left:49.103834%;top:90.998283%;width:24.180287%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-022" aria-label="Go to Where the missing concessions went: checkmate, or the clock" title="Go to Where the missing concessions went: checkmate, or the clock" style="left:76.051885%;top:90.998283%;width:19.167753%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: all endings, draws, and game length
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 46.
+
+---
+name: p-044
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-44.png" alt="Backup: all persistence measures" /&gt;&lt;a href="#p-064" aria-label="Go to Backup: persistence by conflict" title="Go to Backup: persistence by conflict" style="left:37.383004%;top:87.969489%;width:15.392146%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-089" aria-label="Go to FAQ: glossary" title="Go to FAQ: glossary" style="left:55.045056%;top:87.969489%;width:24.025285%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-024" aria-label="Go to Players fought on longer in positions that were already lost" title="Go to Players fought on longer in positions that were already lost" style="left:81.340248%;top:87.969489%;width:13.879390%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: all persistence measures
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 47.
+
+---
+name: p-045
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-45.png" alt="Backup: three measures of play quality" /&gt;&lt;a href="#p-065" aria-label="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" title="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" style="left:6.929442%;top:85.687015%;width:35.208348%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-083" aria-label="Go to FAQ: could the effect be worse play rather than a choice?" title="Go to FAQ: could the effect be worse play rather than a choice?" style="left:44.905555%;top:85.687015%;width:37.781644%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-026" aria-label="Go to Move quality: do players play worse?" title="Go to Move quality: do players play worse?" style="left:85.722192%;top:85.687015%;width:9.497446%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-026" aria-label="Go to Move quality: do players play worse?" title="Go to Move quality: do players play worse?" style="left:4.780363%;top:90.998283%;width:48.049468%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: three measures of play quality
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 48.
+
+---
+name: p-046
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-46.png" alt="Backup: openings by colour, and without Armenia–Azerbaijan" /&gt;&lt;a href="#p-066" aria-label="Go to Backup: the repertoire-deviation index" title="Go to Backup: the repertoire-deviation index" style="left:17.517192%;top:89.118761%;width:34.473247%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-065" aria-label="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" title="Go to Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" style="left:54.758204%;top:89.118761%;width:25.494165%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-027" aria-label="Go to A different margin: departures from habitual openings" title="Go to A different margin: departures from habitual openings" style="left:83.020133%;top:89.118761%;width:12.199505%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: openings by colour, and without Armenia–Azerbaijan
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 49.
+
+---
+name: p-047
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-47.png" alt="Backup: the specification curve with the choice matrix" /&gt;&lt;a href="#p-071" aria-label="Go to Backup: leave-one-conflict-out" title="Go to Backup: leave-one-conflict-out" style="left:34.443261%;top:90.070869%;width:17.725993%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-057" aria-label="Go to Backup: robustness dimensions tested" title="Go to Backup: robustness dimensions tested" style="left:54.937018%;top:90.070869%;width:24.523364%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-028" aria-label="Go to Sensitivity to analysis choices: specification curve" title="Go to Sensitivity to analysis choices: specification curve" style="left:82.228146%;top:90.070869%;width:12.991491%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: the specification curve with the choice matrix
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 50.
+
+---
+name: p-048
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-48.png" alt="Backup: is anyone driving it?" /&gt;&lt;a href="#p-068" aria-label="Go to Backup: dispersion of player-level effects" title="Go to Backup: dispersion of player-level effects" style="left:9.771290%;top:84.217499%;width:21.556060%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-069" aria-label="Go to Backup: rating quartiles, concession and persistence" title="Go to Backup: rating quartiles, concession and persistence" style="left:34.095113%;top:84.217499%;width:19.021350%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-082" aria-label="Go to FAQ: why does the paper not claim individual-level heterogeneity?" title="Go to FAQ: why does the paper not claim individual-level heterogeneity?" style="left:55.884227%;top:84.217499%;width:26.190901%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:85.110122%;top:84.217499%;width:10.109516%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:4.780363%;top:90.320558%;width:6.324428%;height:2.766171%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: is anyone driving it?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 51.
+
+---
+name: p-049
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-49.png" alt="Backup: what we know, conflict and parochialism" /&gt;&lt;a href="#p-091" aria-label="Go to Concession and the cost of continuing" title="Go to Concession and the cost of continuing" style="left:81.517960%;top:88.487288%;width:13.701678%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: what we know, conflict and parochialism
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 52.
+
+---
+name: p-050
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-50.png" alt="Backup: what we know, markets, institutions, expression" /&gt;&lt;a href="#p-091" aria-label="Go to Concession and the cost of continuing" title="Go to Concession and the cost of continuing" style="left:81.517960%;top:85.558447%;width:13.701678%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: what we know, markets, institutions, expression
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 53.
+
+---
+name: p-051
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-51.png" alt="Backup: eligibility rules for the engine-analyzed sample" /&gt;&lt;a href="#p-009" aria-label="Go to Two samples used in this paper" title="Go to Two samples used in this paper" style="left:80.370329%;top:90.998283%;width:14.849309%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: eligibility rules for the engine-analyzed sample
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 54.
+
+---
+name: p-052
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-52.png" alt="Backup: the sampling frame and the probability-sample caveat" /&gt;&lt;a href="#p-008" aria-label="Go to The data: 32.4 million games by 33,687 accounts" title="Go to The data: 32.4 million games by 33,687 accounts" style="left:81.235296%;top:91.617212%;width:13.984341%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: the sampling frame and the probability-sample caveat
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 55.
+
+---
+name: p-053
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-53.png" alt="Backup: flag-stability audit (re-scrape, September 2024)" /&gt;&lt;a href="#p-029" aria-label="Go to Limitations" title="Go to Limitations" style="left:75.543664%;top:89.519360%;width:19.675973%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: flag-stability audit (re-scrape, September 2024)
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 56.
+
+---
+name: p-054
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-54.png" alt="Backup: what a displayed flag is, and is not" /&gt;&lt;a href="#p-029" aria-label="Go to Limitations" title="Go to Limitations" style="left:75.543664%;top:90.998283%;width:19.675973%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: what a displayed flag is, and is not
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 57.
+
+---
+name: p-055
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-55.png" alt="Backup: how Table 1 counts games, observations and accounts" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:75.780246%;top:91.617212%;width:19.439392%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: how Table 1 counts games, observations and accounts
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 58.
+
+---
+name: p-056
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-56.png" alt="Backup: the Ukraine–Russia 2014 robustness sample" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:75.780246%;top:85.753651%;width:19.439392%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: the Ukraine–Russia 2014 robustness sample
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 59.
+
+---
+name: p-057
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-57.png" alt="Backup: robustness dimensions tested" /&gt;&lt;a href="#p-028" aria-label="Go to Sensitivity to analysis choices: specification curve" title="Go to Sensitivity to analysis choices: specification curve" style="left:82.228146%;top:86.438040%;width:12.991491%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: robustness dimensions tested
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 60.
+
+---
+name: p-058
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-58.png" alt="Backup: game-level estimation" /&gt;&lt;a href="#p-022" aria-label="Go to Where the missing concessions went: checkmate, or the clock" title="Go to Where the missing concessions went: checkmate, or the clock" style="left:76.051885%;top:89.823533%;width:19.167753%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: game-level estimation
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 61.
+
+---
+name: p-059
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-59.png" alt="Backup: monthly event study, raw-record sample" /&gt;&lt;a href="#p-014" aria-label="Go to Before onset: no pre-trend" title="Go to Before onset: no pre-trend" style="left:80.323145%;top:88.005942%;width:14.896493%;height:2.950791%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: monthly event study, raw-record sample
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 62.
+
+---
+name: p-060
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-60.png" alt="Backup: monthly event study, engine-analyzed sample" /&gt;&lt;a href="#p-014" aria-label="Go to Before onset: no pre-trend" title="Go to Before onset: no pre-trend" style="left:80.323145%;top:85.858309%;width:14.896493%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: monthly event study, engine-analyzed sample
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 63.
+
+---
+name: p-061
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-61.png" alt="Backup: three-month bins to month 17" /&gt;&lt;a href="#p-015" aria-label="Go to After onset: negative in every bin" title="Go to After onset: negative in every bin" style="left:81.479595%;top:90.628650%;width:13.740042%;height:2.950791%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: three-month bins to month 17
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 64.
+
+---
+name: p-062
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-62.png" alt="Backup: joint pre-onset tests by conflict" /&gt;&lt;a href="#p-014" aria-label="Go to Before onset: no pre-trend" title="Go to Before onset: no pre-trend" style="left:80.323145%;top:81.823313%;width:14.896493%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: joint pre-onset tests by conflict
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 65.
+
+---
+name: p-063
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-63.png" alt="Backup: Ukraine–Russia, contact with the other side month by month" /&gt;&lt;a href="#p-088" aria-label="Go to FAQ: could players simply have quit on seeing the flag?" title="Go to FAQ: could players simply have quit on seeing the flag?" style="left:24.383355%;top:90.998283%;width:23.399545%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-086" aria-label="Go to FAQ: can players avoid hostile-country opponents?" title="Go to FAQ: can players avoid hostile-country opponents?" style="left:50.817894%;top:90.998283%;width:27.846312%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-029" aria-label="Go to Limitations" title="Go to Limitations" style="left:81.699199%;top:90.998283%;width:13.520438%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: Ukraine–Russia, contact with the other side month by month
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 66.
+
+---
+name: p-064
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-64.png" alt="Backup: persistence by conflict" /&gt;&lt;a href="#p-025" aria-label="Go to Robustness: the same games became lost, and players did not move their" title="Go to Robustness: the same games became lost, and players did not move their" style="left:84.740807%;top:83.336338%;width:10.478830%;height:2.950791%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: persistence by conflict
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 67.
+
+---
+name: p-065
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-65.png" alt="Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)" /&gt;&lt;a href="#p-026" aria-label="Go to Move quality: do players play worse?" title="Go to Move quality: do players play worse?" style="left:79.879526%;top:85.725037%;width:15.340111%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: play-quality and secondary outcomes (engine-analyzed sample, pooled)
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 68.
+
+---
+name: p-066
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-66.png" alt="Backup: the repertoire-deviation index" /&gt;&lt;a href="#p-027" aria-label="Go to A different margin: departures from habitual openings" title="Go to A different margin: departures from habitual openings" style="left:83.020133%;top:90.409536%;width:12.199505%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: the repertoire-deviation index
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 69.
+
+---
+name: p-067
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-67.png" alt="Backup: game length in Armenia–Azerbaijan" /&gt;&lt;a href="#p-020" aria-label="Go to Armenia–Azerbaijan" title="Go to Armenia–Azerbaijan" style="left:79.531819%;top:84.268456%;width:15.687818%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: game length in Armenia–Azerbaijan
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 70.
+
+---
+name: p-068
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-68.png" alt="Backup: dispersion of player-level effects" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:84.816438%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: dispersion of player-level effects
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 71.
+
+---
+name: p-069
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-69.png" alt="Backup: rating quartiles, concession and persistence" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:87.401124%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: rating quartiles, concession and persistence
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 72.
+
+---
+name: p-070
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-70.png" alt="Backup: activity quartiles and the pooled trend test" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:79.817183%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: activity quartiles and the pooled trend test
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 73.
+
+---
+name: p-071
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-71.png" alt="Backup: leave-one-conflict-out" /&gt;&lt;a href="#p-019" aria-label="Go to By conflict" title="Go to By conflict" style="left:81.755864%;top:86.686553%;width:13.463773%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: leave-one-conflict-out
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 74.
+
+---
+name: p-072
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-72.png" alt="Backup: ethics and data governance" /&gt;&lt;a href="#p-035" aria-label="Go to Backup slides (1 of 2): data, design, specification" title="Go to Backup slides (1 of 2): data, design, specification" style="left:79.563349%;top:84.512657%;width:15.656288%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: ethics and data governance
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 75.
+
+---
+name: p-073
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-73.png" alt="Backup: Iran feasibility" /&gt;&lt;a href="#p-032" aria-label="Go to Next steps" title="Go to Next steps" style="left:81.971941%;top:86.283994%;width:13.247696%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Backup: Iran feasibility
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 76.
+
+---
+name: p-074
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-74.png" alt="FAQ" /&gt;&lt;a href="#p-075" aria-label="Go to FAQ: why a linear probability model and not a logit?" title="Go to FAQ: why a linear probability model and not a logit?" style="left:8.126242%;top:12.228851%;width:40.795911%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-076" aria-label="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" title="Go to FAQ: what do−1.46 and −0.46 percentage points mean concretely?" style="left:8.126242%;top:17.462116%;width:54.450625%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-077" aria-label="Go to FAQ: why does weighting players equally triple the estimate?" title="Go to FAQ: why does weighting players equally triple the estimate?" style="left:8.126242%;top:22.694988%;width:47.681256%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-078" aria-label="Go to FAQ: what exactly is exogenous here, and what is not?" title="Go to FAQ: what exactly is exogenous here, and what is not?" style="left:8.126242%;top:27.928253%;width:42.705543%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-080" aria-label="Go to FAQ: are flags citizenship?" title="Go to FAQ: are flags citizenship?" style="left:8.126242%;top:33.161517%;width:18.374002%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-081" aria-label="Go to FAQ: why is Armenia–Azerbaijan null?" title="Go to FAQ: why is Armenia–Azerbaijan null?" style="left:8.126242%;top:38.394782%;width:28.683278%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-082" aria-label="Go to FAQ: why does the paper not claim individual-level heterogeneity?" title="Go to FAQ: why does the paper not claim individual-level heterogeneity?" style="left:8.126242%;top:43.628047%;width:52.240251%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-083" aria-label="Go to FAQ: could the effect be worse play rather than a choice?" title="Go to FAQ: could the effect be worse play rather than a choice?" style="left:8.126242%;top:48.861311%;width:44.869615%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-084" aria-label="Go to FAQ: why do the two samples count as independent corroboration?" title="Go to FAQ: why do the two samples count as independent corroboration?" style="left:8.126242%;top:54.094576%;width:53.162104%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-085" aria-label="Go to FAQ: why these three conflicts?" title="Go to FAQ: why these three conflicts?" style="left:8.126242%;top:59.327840%;width:22.948651%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-086" aria-label="Go to FAQ: can players avoid hostile-country opponents?" title="Go to FAQ: can players avoid hostile-country opponents?" style="left:8.126242%;top:64.560713%;width:38.818811%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-087" aria-label="Go to FAQ: is there a structural model behind this?" title="Go to FAQ: is there a structural model behind this?" style="left:8.126242%;top:69.793978%;width:33.979799%;height:3.221646%"&gt;&lt;/a&gt;&lt;a href="#p-089" aria-label="Go to FAQ: glossary" title="Go to FAQ: glossary" style="left:8.126242%;top:75.027242%;width:48.807941%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-088" aria-label="Go to FAQ: could players simply have quit on seeing the flag?" title="Go to FAQ: could players simply have quit on seeing the flag?" style="left:8.126242%;top:80.260507%;width:42.926691%;height:3.905252%"&gt;&lt;/a&gt;&lt;a href="#p-079" aria-label="Go to FAQ: why should the pre-onset estimates be zero?" title="Go to FAQ: why should the pre-onset estimates be zero?" style="left:8.126242%;top:85.493772%;width:38.645509%;height:3.904860%"&gt;&lt;/a&gt;&lt;a href="#p-035" aria-label="Go to Backup slides (1 of 2): data, design, specification" title="Go to Backup slides (1 of 2): data, design, specification" style="left:84.515029%;top:90.998283%;width:10.704608%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 77.
+
+---
+name: p-075
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-75.png" alt="FAQ: why a linear probability model and not a logit?" /&gt;&lt;a href="#p-094" aria-label="Go to Estimation: the specification" title="Go to Estimation: the specification" style="left:74.471660%;top:83.497440%;width:20.747978%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why a linear probability model and not a logit?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 78.
+
+---
+name: p-076
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-76.png" alt="FAQ: what do−1.46 and −0.46 percentage points mean concretely?" /&gt;&lt;a href="#p-016" aria-label="Go to Players conceded less often to hostile-country opponents after war began" title="Go to Players conceded less often to hostile-country opponents after war began" style="left:80.398110%;top:88.096881%;width:14.821527%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: what do−1.46 and −0.46 percentage points mean concretely?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 79.
+
+---
+name: p-077
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-77.png" alt="FAQ: why does weighting players equally triple the estimate?" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:81.349415%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why does weighting players equally triple the estimate?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 80.
+
+---
+name: p-078
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-78.png" alt="FAQ: what exactly is exogenous here, and what is not?" /&gt;&lt;a href="#p-013" aria-label="Go to Estimation: the same player, two kinds of opponent, before and after" title="Go to Estimation: the same player, two kinds of opponent, before and after" style="left:77.986211%;top:83.497440%;width:17.233427%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: what exactly is exogenous here, and what is not?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 81.
+
+---
+name: p-079
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-79.png" alt="FAQ: why should the pre-onset estimates be zero?" /&gt;&lt;a href="#p-014" aria-label="Go to Before onset: no pre-trend" title="Go to Before onset: no pre-trend" style="left:80.323145%;top:90.244514%;width:14.896493%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why should the pre-onset estimates be zero?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 82.
+
+---
+name: p-080
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-80.png" alt="FAQ: are flags citizenship?" /&gt;&lt;a href="#p-038" aria-label="Go to Backup: hostile-country games and the comparison set" title="Go to Backup: hostile-country games and the comparison set" style="left:79.332941%;top:79.201781%;width:15.886697%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: are flags citizenship?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 83.
+
+---
+name: p-081
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-81.png" alt="FAQ: why is Armenia–Azerbaijan null?" /&gt;&lt;a href="#p-020" aria-label="Go to Armenia–Azerbaijan" title="Go to Armenia–Azerbaijan" style="left:79.531819%;top:87.793100%;width:15.687818%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why is Armenia–Azerbaijan null?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 84.
+
+---
+name: p-082
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-82.png" alt="FAQ: why does the paper not claim individual-level heterogeneity?" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:83.497440%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why does the paper not claim individual-level heterogeneity?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 85.
+
+---
+name: p-083
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-83.png" alt="FAQ: could the effect be worse play rather than a choice?" /&gt;&lt;a href="#p-026" aria-label="Go to Move quality: do players play worse?" title="Go to Move quality: do players play worse?" style="left:79.879526%;top:81.349415%;width:15.340111%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: could the effect be worse play rather than a choice?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 86.
+
+---
+name: p-084
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-84.png" alt="FAQ: why do the two samples count as independent corroboration?" /&gt;&lt;a href="#p-009" aria-label="Go to Two samples used in this paper" title="Go to Two samples used in this paper" style="left:80.370329%;top:83.497440%;width:14.849309%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why do the two samples count as independent corroboration?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 87.
+
+---
+name: p-085
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-85.png" alt="FAQ: why these three conflicts?" /&gt;&lt;a href="#p-037" aria-label="Go to Backup: the three conflicts and the analysis samples" title="Go to Backup: the three conflicts and the analysis samples" style="left:75.780246%;top:79.505562%;width:19.439392%;height:2.950399%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: why these three conflicts?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 88.
+
+---
+name: p-086
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-86.png" alt="FAQ: can players avoid hostile-country opponents?" /&gt;&lt;a href="#p-013" aria-label="Go to Estimation: the same player, two kinds of opponent, before and after" title="Go to Estimation: the same player, two kinds of opponent, before and after" style="left:77.986211%;top:79.201781%;width:17.233427%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: can players avoid hostile-country opponents?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 89.
+
+---
+name: p-087
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-87.png" alt="FAQ: is there a structural model behind this?" /&gt;&lt;a href="#p-095" aria-label="Go to Per-player vs per-game estimates" title="Go to Per-player vs per-game estimates" style="left:78.602470%;top:72.758488%;width:16.617168%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: is there a structural model behind this?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 90.
+
+---
+name: p-088
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-88.png" alt="FAQ: could players simply have quit on seeing the flag?" /&gt;&lt;a href="#p-013" aria-label="Go to Estimation: the same player, two kinds of opponent, before and after" title="Go to Estimation: the same player, two kinds of opponent, before and after" style="left:77.986211%;top:83.497440%;width:17.233427%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: could players simply have quit on seeing the flag?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 91.
+
+---
+name: p-089
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-89.png" alt="FAQ: glossary" /&gt;&lt;a href="#p-024" aria-label="Go to Players fought on longer in positions that were already lost" title="Go to Players fought on longer in positions that were already lost" style="left:81.340248%;top:90.998283%;width:13.879390%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+FAQ: glossary
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 92.
+
+---
+name: p-090
+class: center, middle, backup-divider
+count: false
+
+# Additional source slides
+
+Original slides retained as return-link destinations
+
+???
+
+Additional source material.
+
+---
+name: p-091
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-91.png" alt="Concession and the cost of continuing" /&gt;&lt;a href="#p-049" aria-label="Go to Backup: what we know, conflict and parochialism" title="Go to Backup: what we know, conflict and parochialism" style="left:49.594195%;top:86.577976%;width:21.380994%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-050" aria-label="Go to Backup: what we know, markets, institutions, expression" title="Go to Backup: what we know, markets, institutions, expression" style="left:73.464699%;top:86.577976%;width:21.754938%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Concession and the cost of continuing
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 2.
+
+---
+name: p-092
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-92.png" alt="Why chess?" /&gt;&lt;/div&gt;
+
+???
+
+Why chess?
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 3.
+
+---
+name: p-093
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-93.png" alt="Resignation: a unilateral concession" /&gt;&lt;/div&gt;
+
+???
+
+Resignation: a unilateral concession
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 6.
+
+---
+name: p-094
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-94.png" alt="Estimation: the specification" /&gt;&lt;a href="#p-075" aria-label="Go to FAQ: why a linear probability model and not a logit?" title="Go to FAQ: why a linear probability model and not a logit?" style="left:6.266220%;top:89.694181%;width:29.435136%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-057" aria-label="Go to Backup: robustness dimensions tested" title="Go to Backup: robustness dimensions tested" style="left:38.434944%;top:89.694181%;width:24.523584%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-040" aria-label="Go to Backup: what the fixed effects absorb, and what survives" title="Go to Backup: what the fixed effects absorb, and what survives" style="left:65.448039%;top:89.694181%;width:29.771598%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Estimation: the specification
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 16.
+
+---
+name: p-095
+class: source-page
+count: false
+
+&lt;div class="pdf-paper" style="top:85.12494px;height:510.75013px"&gt;&lt;img src="assets/david-pages/page-95.png" alt="Per-player vs per-game estimates" /&gt;&lt;a href="#p-070" aria-label="Go to Backup: activity quartiles and the pooled trend test" title="Go to Backup: activity quartiles and the pooled trend test" style="left:12.341939%;top:90.170823%;width:17.558203%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-048" aria-label="Go to Backup: is anyone driving it?" title="Go to Backup: is anyone driving it?" style="left:32.667685%;top:90.170823%;width:22.996717%;height:3.557961%"&gt;&lt;/a&gt;&lt;a href="#p-077" aria-label="Go to FAQ: why does weighting players equally triple the estimate?" title="Go to FAQ: why does weighting players equally triple the estimate?" style="left:58.699396%;top:90.170823%;width:36.520242%;height:3.557961%"&gt;&lt;/a&gt;&lt;/div&gt;
+
+???
+
+Per-player vs per-game estimates
+
+Speaking notes: see david_speaker_notes.pdf, original PDF page 22.</textarea><script src="libs/remark-local.min.js"></script><script>var slideshow=remark.create({ratio:'4:3',countIncrementalSlides:false,slideNumberFormat:'%current% / %total%'});</script></body></html>

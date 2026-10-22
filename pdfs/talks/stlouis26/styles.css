@@ -1,0 +1,27 @@
+/* The EEA deck's fonts, colors, 4:3 format, and plain slide layout. */
+@font-face {
+  font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400;
+  src: url('assets/fonts/yanone-regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400;
+  src: url('assets/fonts/yanone-symbols.woff2') format('woff2');
+  unicode-range: U+2150-218F,U+2190,U+2192,U+2194-2199,U+2300-243F,U+2460-24FF,U+25A0-27BF,U+1F000-1F0FF;
+}
+@font-face {
+  font-family: 'Droid Serif'; font-style: normal; font-weight: 400;
+  src: url('assets/fonts/droid-serif-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Droid Serif'; font-style: normal; font-weight: 700;
+  src: url('assets/fonts/droid-serif-bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Droid Serif'; font-style: italic; font-weight: 400;
+  src: url('assets/fonts/droid-serif-italic.woff2') format('woff2');
+}
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; }
+h1,h2,h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; }
+.caption { text-align: center; font-size: var(--slide-text-size); }
+@media print { @page { size: 908px 681px; margin: 0; } }
